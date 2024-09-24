@@ -1,140 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talay</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            overflow-x: hidden;
-            font-family: "Libre Baskerville", serif;
-        }
-        .section {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .video-container {
-            position: relative;
-            overflow: hidden;
-        }
-        video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translateX(-50%) translateY(-50%);
-            object-fit: cover;
-        }
-        .content {
-            position: relative;
-            z-index: 1;
-        }
-        h1 {
-            color: white;
-            font-size: 1.5rem;
-            text-align: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      overflow-x: hidden;
+      font-family: "Libre Baskerville", serif;
+    }
 
-            font-weight: 700;
-        }
-        .text-section {
-            background-color: white;
-            font-size: 2rem;
-        }
-        p {
-            color: rgb(46, 56, 63);
-            line-height: 1.8;
-            text-align: center;
-            max-width: 800px;
-            padding: 20px;
-            font-weight: 700;
-        }
-        .offerings-section {
-            background-color: rgb(210, 185, 150);
-            color: white;
-            flex-direction: column;
-            text-align: center;
+    .section {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        }
-        .offerings-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .offerings-section h1 {
-            font-size: 3rem;
-            margin-bottom: 2rem;
-        }
-        .menu-container {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 1200px;
-        }
-        .menu-column {
-            flex: 1;
-            padding: 0 1rem;
-        }
-        .menu-column h4 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .menu-column ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .menu-column li {
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    .video-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+      object-fit: cover;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .text-section {
+      background-color: white;
+      font-size: 2rem;
+    }
+
+    p {
+      color: rgb(46, 56, 63);
+      line-height: 1.8;
+      text-align: center;
+      max-width: 800px;
+      padding: 20px;
+      font-weight: 700;
+    }
+
+    .offerings-section {
+      background-color: rgb(210, 185, 150);
+      background-image: url('assets/c.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .offerings-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .offerings-section h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .menu-column {
+      flex: 1;
+      padding: 0 1rem;
+    }
+
+    .menu-column h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-column ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu-column li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="section video-container">
-        <video autoplay loop muted playsinline>
-            <source src="assets/tl.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="content">
-            <h1>Coming soon...</h1>
-        </div>
+  <div class="section video-container">
+    <video autoplay loop muted playsinline>
+      <source src="assets/tl.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <h1>Coming soon...</h1>
     </div>
-    <div class="section text-section">
-        <p>"Urban sophistication meets Thai coastal allure. A culinary journey where tradition and innovation intertwine. Experience the essence of elevated Thai cuisine, where each dish whispers a tale of the sea and city alike."</p>
+  </div>
+  <div class="section text-section">
+    <p>"Urban sophistication meets Thai coastal allure. A culinary journey where tradition and innovation intertwine.
+      Experience the essence of elevated Thai cuisine, where each dish whispers a tale of the sea and city alike."</p>
+  </div>
+  <div class="section offerings-section">
+    <h3>offerings</h3>
+    <h1>Thai Coastal Cuisine</h1>
+    <div class="menu-container">
+      <div class="menu-column">
+        <h4>Plates</h4>
+        <ul>
+          <li>Tom Yum Goong</li>
+          <li>Pad Thai beef/pork/shrimp (+2.50$)</li>
+          <li>Chicken Tom Kha Gai</li>
+          <li>Sweeeeeet Thai Tea</li>
+          <li>Bento (red kind)</li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h4>Raw Bar</h4>
+        <ul>
+          <li>Kushi Oysters</li>
+          <li>Salmon Crudo</li>
+          <li>Nua Scallops</li>
+          <li>Tuna Tartare</li>
+          <li>Ceviche</li>
+        </ul>
+      </div>
     </div>
-    <div class="section offerings-section">
-        <h3>offerings</h3>
-        <h1>Thai Coastal Cuisine</h1>
-        <div class="menu-container">
-            <div class="menu-column">
-                <h4>Plates</h4>
-                <ul>
-                    <li>Tom Yum Goong</li>
-                    <li>Pad Thai</li>
-                    <li>Green Curry</li>
-                    <li>Massaman Curry</li>
-                    <li>Moo Ping</li>
-                </ul>
-            </div>
-            <div class="menu-column">
-                <h4>Raw Bar</h4>
-                <ul>
-                    <li>Kushi Oysters</li>
-                    <li>Salmon Crudo</li>
-                    <li>Nua Scallops</li>
-                    <li>Tuna Tartare</li>
-                    <li>Ceviche</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+  </div>
 </body>
+
 </html>
