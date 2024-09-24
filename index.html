@@ -1,164 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Talay</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      overflow-x: hidden;
-      font-family: "Libre Baskerville", serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talay - Thai Seafood & Raw Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
 
-    .section {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .video-container {
-      position: relative;
-      overflow: hidden;
-    }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fcfbf8;
+        }
 
-    video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      transform: translateX(-50%) translateY(-50%);
-      object-fit: cover;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    .content {
-      position: relative;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(252, 251, 248, 0.9);
+            padding: 20px 0;
+            z-index: 1000;
+        }
 
-    h1 {
-      color: white;
-      font-size: 1.5rem;
-      text-align: center;
-      font-weight: 700;
-    }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .text-section {
-      background-color: white;
-      font-size: 2rem;
-    }
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+        }
 
-    p {
-      color: rgb(46, 56, 63);
-      line-height: 1.8;
-      text-align: center;
-      max-width: 800px;
-      padding: 20px;
-      font-weight: 700;
-    }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
 
-    .offerings-section {
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      background-color: rgb(210, 185, 150);
-      background-image: url('assets/c.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: white;
-      flex-direction: column;
-      text-align: center;
-    }
+        .nav-links li {
+            margin-left: 30px;
+        }
 
-    .offerings-section h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
 
-    .offerings-section h1 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
+        .nav-links a:hover {
+            color: #c6a87d;
+        }
 
-    .menu-container {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      max-width: 720px;
-    }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-    .menu-column {
-      flex: 1;
-      padding: 0 1rem;
-    }
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+        }
 
-    .menu-column h4 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
+        .hero-content {
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
 
-    .menu-column ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
 
-    .menu-column li {
-      margin-bottom: 0.5rem;
-    }
-  </style>
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about {
+            padding: 100px 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .about h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: #c6a87d;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .offerings {
+            padding: 100px 0;
+            background-color: #fcfbf8;
+        }
+
+        .offerings h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #c6a87d;
+        }
+
+        .menu-sections {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-section {
+            flex-basis: 45%;
+        }
+
+        .menu-section h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+        }
+
+        .menu-item h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .menu-sections {
+                flex-direction: column;
+            }
+
+            .menu-section {
+                margin-bottom: 50px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div class="section video-container">
-    <video autoplay loop muted playsinline>
-      <source src="assets/tl.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="content">
-      <h1>Coming soon...</h1>
-    </div>
-  </div>
-  <div class="section text-section">
-    <p>"Urban sophistication meets Thai coastal allure. A culinary journey where tradition and innovation intertwine.
-      Experience the essence of elevated Thai cuisine, where each dish whispers a tale of the sea and city alike."</p>
-  </div>
-  <div class="section offerings-section">
-    <h3>offerings</h3>
-    <h1>Thai Coastal Cuisine</h1>
-    <div class="menu-container">
-      <div class="menu-column">
-        <h4>Plates</h4>
-        <ul>
-          <li>Tom Yum Goong</li>
-          <li>Pad Thai beef/pork/shrimp (+2.50$)</li>
-          <li>Chicken Tom Kha Gai</li>
-          <li>Sweeeeeet Thai Tea</li>
-          <li>Bento (red kind)</li>
-        </ul>
-      </div>
-      <div class="menu-column">
-        <h4>Raw Bar</h4>
-        <ul>
-          <li>Kushi Oysters</li>
-          <li>Salmon Crudo</li>
-          <li>Nua Scallops</li>
-          <li>Tuna Tartare</li>
-          <li>Ceviche</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Talay</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#offerings">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <video autoplay loop muted playsinline>
+            <source src="assets/tl.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Talay</h1>
+            <p>Thai Seafood & Raw Bar</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Talay</h2>
+            <p>Urban sophistication meets Thai coastal allure. A culinary journey where tradition and innovation intertwine. Experience the essence of elevated Thai cuisine, where each dish whispers a tale of the sea and city alike.</p>
+        </div>
+    </section>
+
+    <section id="offerings" class="offerings">
+        <div class="container">
+            <h2>Our Offerings</h2>
+            <div class="menu-sections">
+                <div class="menu-section">
+                    <h3>Plates</h3>
+                    <div class="menu-item">
+                        <h4>Tom Yum Seafood Soup</h4>
+                        <p>A spicy and sour soup with mixed seafood, lemongrass, and kaffir lime leaves</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Grilled Lemongrass Prawns</h4>
+                        <p>Succulent prawns marinated in lemongrass and grilled to perfection</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Crispy Whole Fish with Tamarind Sauce</h4>
+                        <p>Locally sourced whole fish, crispy-fried and topped with a tangy tamarind sauce</p>
+                    </div>
+                </div>
+                <div class="menu-section">
+                    <h3>Raw Bar</h3>
+                    <div class="menu-item">
+                        <h4>Fresh Oysters</h4>
+                        <p>A selection of local and imported oysters with Thai-inspired mignonette</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Tuna Tartare</h4>
+                        <p>Fresh tuna mixed with avocado, mango, and a spicy lime dressing</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Ceviche Sampler</h4>
+                        <p>A trio of Thai-inspired ceviches featuring the day's freshest catch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
