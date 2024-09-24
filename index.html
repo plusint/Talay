@@ -3,69 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Talay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
             margin: 0;
-            overflow: hidden;
+            overflow-x: hidden;
         }
-        .krub-light {
-  font-family: "Krub", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-        .video-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        video {
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
-        .content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .section {
+            height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        .video-container {
+            position: relative;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
         h1 {
             color: white;
-            font-size: 1rem;
+            font-size: 2rem;
             text-align: center;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: "Libre Baskerville", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .text-section {
+            background-color: white;
+        }
+        p {
+            color: rgb(46, 56, 63);
+            font-size: 40px;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: bold;
         }
     </style>
 </head>
 <body>
-    <div class="video-container">
+    <div class="section video-container">
         <video autoplay loop muted playsinline>
             <source src="assets/tl.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <div class="content">
+            <h1>Coming soon...</h1>
+        </div>
     </div>
-    <div class="content krub-light">
-        <h1>Coming soon...</h1>
+    <div class="section text-section">
+        <p>"Urban sophistication meets Thai coastal allure. A culinary journey where tradition and innovation intertwine. Experience the essence of elevated Thai cuisine, where each dish whispers a tale of the sea and city alike."</p>
     </div>
 </body>
 </html>
