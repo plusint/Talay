@@ -28,12 +28,17 @@
 
         header {
             position: fixed;
-            top: 0;
+            top: -100px; /* Start off-screen */
             left: 0;
             right: 0;
             background-color: rgba(252, 251, 248, 0.9);
-            padding: 20px 0;
+            padding: 0px 0;
             z-index: 1000;
+            transition: top 0.3s ease-in-out;
+        }
+
+        header.visible {
+            top: 0; /* Slide in when class is added */
         }
 
         nav {
@@ -97,12 +102,10 @@
             z-index: 1;
         }
 
-        .hero h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 5rem;
-            font-weight: 300;
+        .hero-logo {
+            max-width: 300px;
+            height: auto;
             margin-bottom: 20px;
-            letter-spacing: 2px;
         }
 
         .hero p {
@@ -186,11 +189,15 @@
             .menu-section {
                 margin-bottom: 50px;
             }
+
+            .hero-logo {
+                max-width: 200px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="container">
             <a href="#" class="logo">Talay</a>
             <ul class="nav-links">
@@ -207,8 +214,7 @@
             Your browser does not support the video tag.
         </video>
         <div class="hero-content">
-            <h1>Talay</h1>
-            <p>Thai Seafood & Raw Bar</p>
+            <img src="/assets/logo.png" alt="Talay" class="hero-logo">
         </div>
     </section>
 
@@ -256,5 +262,22 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var header = document.getElementById('header');
+            var hero = document.querySelector('.hero');
+            var heroHeight = hero.offsetHeight;
+            var scrollThreshold = heroHeight - header.offsetHeight;
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > scrollThreshold) {
+                    header.classList.add('visible');
+                } else {
+                    header.classList.remove('visible');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
