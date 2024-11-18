@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <title>Talay - Thai Seafood & Raw Bar</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
@@ -180,6 +182,10 @@
             margin-bottom: 5px;
         }
 
+        .menu-item:last-child {
+            margin-bottom: 0;
+        }
+
         .menu-item p {
             font-size: 1rem;
             color: #666;
@@ -231,46 +237,6 @@
                 and city alike.</p>
         </div>
     </section>
-
-    <!-- <section id="offerings" class="offerings">
-        <div class="container">
-            <h2>Our Offerings</h2>
-            <div class="menu-sections">
-                <div class="menu-section">
-                    <h3>Plates</h3>
-                    <div class="menu-item">
-                        <h4>Tom Yum Seafood Soup</h4>
-                        <p>A spicy and sour soup with mixed seafood, lemongrass, and kaffir lime leaves</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Grilled Lemongrass Prawns</h4>
-                        <p>Succulent prawns marinated in lemongrass and grilled to perfection</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Crispy Whole Fish with Tamarind Sauce</h4>
-                        <p>Locally sourced whole fish, crispy-fried and topped with a tangy tamarind sauce</p>
-                    </div>
-                </div>
-                <div class="menu-section">
-                    <h3>Raw Bar</h3>
-                    <div class="menu-item">
-                        <h4>Fresh Oysters</h4>
-                        <p>A selection of local and imported oysters with Thai-inspired mignonette</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Tuna Tartare</h4>
-                        <p>Fresh tuna mixed with avocado, mango, and a spicy lime dressing</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Ceviche Sampler</h4>
-                        <p>A trio of Thai-inspired ceviches featuring the day's freshest catch</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
 
     <section id="offerings" class="offerings">
         <div class="container">
@@ -564,15 +530,15 @@
     </section>
 
     <section id="location" class="location">
-        
+
     </section>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var header = document.getElementById('header');
-            var hero = document.querySelector('.hero');
-            var heroHeight = hero.offsetHeight;
-            var scrollThreshold = heroHeight - header.offsetHeight;
+            const header = document.getElementById('header');
+            const hero = document.querySelector('.hero');
+            const heroHeight = hero.offsetHeight;
+            const scrollThreshold = heroHeight - header.offsetHeight;
 
             window.addEventListener('scroll', function () {
                 if (window.pageYOffset > scrollThreshold) {
