@@ -136,7 +136,7 @@
             font-size: 2.5rem;
             font-weight: 400;
             margin-bottom: 30px;
-            color: #c6a87d;
+            color: #635236;
         }
 
         .about p {
@@ -157,7 +157,7 @@
             font-weight: 400;
             margin-bottom: 1.875rem;
             text-align: center;
-            color: #c6a87d;
+            color: #635236;
         }
 
         .offerings-container {
@@ -393,21 +393,54 @@
 
 
         @media (max-width: 768px) {
+            .footer {
+                margin: 0;
+                text-align: center;
+                /* Center all text in footer */
+            }
+
             .location-content {
                 flex-direction: column;
                 gap: 30px;
+                align-items: center;
+                /* Center flex items horizontally */
             }
 
             .contact-item {
                 width: 100%;
+                /* Take full width */
+                text-align: center;
+                /* Center text within each item */
+            }
+
+            /* Center the decorative line after h3 */
+            .contact-item h3:after {
+                left: 50%;
+                /* Position line in center */
+                transform: translateX(-50%);
+                /* Offset line by half its width */
             }
 
             .address {
-                min-width: 2rem;
+                min-width: unset;
+                /* Remove the min-width constraint */
             }
 
             .address p {
-                max-width: 12rem;
+                max-width: none;
+                /* Remove max-width constraint */
+                margin: 0 auto;
+                /* Center the paragraph */
+            }
+
+            /* Center the Instagram icon if present */
+            .icon-wrapper {
+                margin: 0 auto;
+            }
+
+            .icon {
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
 
@@ -415,17 +448,12 @@
         /* Mobile adjustments */
         @media (max-width: 768px) {
 
-            .location-content {
-                flex-direction: column;
+            .about .container{
+                margin: 0;
             }
 
             nav.container {
                 margin: 0;
-            }
-
-            .contact-info,
-            .social-links {
-                margin: 10px 20px;
             }
 
             .menu-container {
@@ -435,6 +463,7 @@
             summary {
                 font-size: 1.5rem;
                 padding: 1rem;
+                /* text-align: center; */
             }
 
             .menu-section-content {
@@ -812,7 +841,7 @@
     </section>
 
     <section id="location" class="location">
-        <div class="container">
+        <div class="container footer">
             <div class="location-content">
                 <div class="contact-item address">
                     <h3>address</h3>
@@ -829,7 +858,8 @@
                 <div class="contact-item">
                     <h3>connect</h3>
                     <p>
-                        <a href="https://www.instagram.com/talayorlando" class="insta-link">
+                        <a href="https://www.instagram.com/talayorlando" class="insta-link"
+                            aria-label="Follow us on Instagram">
                             <div class="icon-wrapper">
                                 <!-- Gradient version (bottom layer) -->
                                 <svg class="icon icon-gradient" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
