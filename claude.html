@@ -1,0 +1,334 @@
+<!---excerpts-->
+
+<style>
+    
+
+    .menu-sections {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-section {
+        flex-basis: 45%;
+    }
+
+    .menu-section h3 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: rgb(41, 84, 121);
+    }
+
+    .menu-item {
+        margin-bottom: 20px;
+    }
+
+    .menu-item h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+
+    .menu-item p {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    @media (max-width: 768px) {
+        .menu-sections {
+            flex-direction: column;
+        }
+
+        .menu-section {
+            margin-bottom: 50px;
+        }
+    }
+</style>
+
+<div class="menu-sections">
+    <div class="menu-section" id="menu-section-lt">
+        <!-- Starters -->
+        <h3>Starters</h3>
+        <div class="menu-item">
+            <h4>Peek Gai Tod 12</h4>
+            <p>Thai-style fried chicken wings, sweet and sour sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Tod Mun Goong 14</h4>
+            <p>Hand-pressed shrimp cakes, plum sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Po Pia Tod 7</h4>
+            <p>Crispy spring rolls, sweet and sour sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Goong Lui Suan 14</h4>
+            <p>Thai-style shrimp summer rolls, house special sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Gaeng Keaw Wan Roti 12</h4>
+            <p>Roti bread, green curry dipping sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Gam Pu Tod 8</h4>
+            <p>Crispy crab claws, plum sauce.</p>
+        </div>
+
+        <!-- Raw -->
+        <h3>Raw</h3>
+        <div class="menu-item">
+            <h4>Oysters MP</h4>
+            <p>Talay’s mignonette, crispy fried shallots, lemon.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Goong Chae Nam Pla 18</h4>
+            <p>Kaffir lime, sliced garlic, Talay’s seafood sauce, mint.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Salmon Chae Nam Pla 18</h4>
+            <p>Talay’s seafood sauce, sliced garlic, mint.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Yum Ta Krai Salmon 18</h4>
+            <p>Lemongrass, Thai chili, mint, lime sauce.</p>
+        </div>
+
+
+        <!-- Soup -->
+        <h3>Soup</h3>
+        <div class="menu-item">
+            <h4>Tom Yum</h4>
+            <p>Chicken 19 | Shrimp 24 | Seafood 28</p>
+            <p>Spicy and sour soup, mushroom, cherry tomato, aromatic Thai herbal broth.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Tom Kha</h4>
+            <p>Chicken 19 | Shrimp 24 | Seafood 28</p>
+            <p>Creamy, spicy, and sour soup, mushroom, cherry tomato, aromatic Thai herbal broth.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Yen Ta Fo Talay 30</h4>
+            <p>Spicy-sweet-tangy broth, mixed seafood, white wood-ear mushrooms, water spinach, fried
+                wonton.</p>
+        </div>
+
+
+        <!-- Signature -->
+        <h3>Signature</h3>
+        <div class="menu-item">
+            <h4>Talay’s Platter 59</h4>
+            <p>Grilled river prawn, grilled cuttlefish, steamed mussels, Talay’s seafood sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Hor Mok Talay 32</h4>
+            <p>Mixed seafood, red curry, Thai basil, coconut meat.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Goong Ob Woon Sen 25</h4>
+            <p>Shrimp, glass noodles, homemade brown sauce, cilantro, celery, Talay’s seafood sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Goong Prik Kluea 25</h4>
+            <p>Fried shrimp, crispy garlic, Thai chili, pepper, sea salt.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Goong Muk Ga Ree 26</h4>
+            <p>Shrimp, calamari, curry powder, egg, scallion, sweet onion.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pla Nueng Ma Now 29</h4>
+            <p>Steamed seabass fillet, aromatic lime broth, Thai chili, mint.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pla Tod Yum Ma Muang 29</h4>
+            <p>Fried snapper fillet, green mango, Thai chili, cilantro, lime sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Hoy Ob 22</h4>
+            <p>Steamed black mussels, aromatic lime broth, Thai basil, lemongrass.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Kao Pad Pu 27</h4>
+            <p>Crab lumps, jasmine rice, egg, scallion.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Kai Jeaw Pu 27</h4>
+            <p>Thai-style omelette, crab lumps, homemade seasoning.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pu Nim Tod Kra Tiam 22</h4>
+            <p>Crispy soft-shell crab, garlic, pepper.</p>
+        </div>
+
+
+
+        <!-- Beverages -->
+        <h3>Beverages</h3>
+        <div class="menu-item">
+            <h4>Thai Iced Tea 7</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Frozen Thai Iced Tea 9</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Butterfly Pea Lemonade 6</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Sodas 5</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Hot Coffee 5</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Hot Tea 5</h4>
+        </div>
+
+
+    </div>
+
+
+    <div class="menu-section" id="menu-section-rt">
+
+
+        <!-- Salad -->
+        <h3>Salad</h3>
+        <div class="menu-item">
+            <h4>Som Tum Thai 15</h4>
+            <p>+ Grilled Shrimp 20</p>
+            <p>Green papaya salad, Thai chili, garlic, fish sauce, lime, palm sugar, cherry tomato, peanut.
+            </p>
+        </div>
+        <div class="menu-item">
+            <h4>Tum Kao Pode 15</h4>
+            <p>+ Grilled Shrimp 20</p>
+            <p>Sweet corn salad, garlic, Thai chili, fish sauce, lime, palm sugar, cherry tomato, peanut.
+            </p>
+        </div>
+        <div class="menu-item">
+            <h4>Yum Woon Sen Talay 25</h4>
+            <p>Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, snow
+                fungus, lime sauce.</p>
+        </div>
+
+        <!-- Grilled -->
+        <h3>Grilled</h3>
+        <div class="menu-item">
+            <h4>Goong Mae Nam 27</h4>
+            <p>Grilled river prawn, Talay’s seafood sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pla Muk Yang 22</h4>
+            <p>Grilled cuttlefish, cilantro, lime, Talay’s seafood sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Sua Rong Hai 22</h4>
+            <p>House-marinated ribeye, Jaew sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Ko Moo Yang 19</h4>
+            <p>House-marinated pork jaw, Jaew sauce.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Gai Satay 16</h4>
+            <p>Chicken breast, curry powder, cucumber salad, peanut sauce.</p>
+        </div>
+
+
+        <!-- Curry -->
+        <h3>Curry</h3>
+        <p>Served with white jasmine rice.</p>
+        <div class="menu-item">
+            <h4>Kaeng Phed Ped Yang 27</h4>
+            <p>Duck breast, red curry, cherry tomato, pineapple.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pa Nang Scallops 29</h4>
+            <p>Scallops, Pa Nang curry, kaffir lime, Thai chili.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Kaeng Dang Salmon 27</h4>
+            <p>Grilled salmon, red curry, bamboo shoots, bell peppers, Thai basil.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Keaw Wan Gai 22</h4>
+            <p>Chicken, green curry, bamboo shoots, bell peppers, Thai basil.</p>
+        </div>
+
+
+        <!-- Classics -->
+        <h3>Classics</h3>
+        <p>Proteins: chicken, pork, beef, tofu, vegetable 17 | shrimp 22 | seafood 25</p>
+        <div class="menu-item">
+            <h4>Pad Thai</h4>
+            <p>Thin rice noodles, egg, bean sprouts, scallion, peanut.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pad See Ew</h4>
+            <p>Flat rice noodles, egg, Chinese broccoli.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pad Kee Mow</h4>
+            <p>Flat rice noodles, bell peppers, Thai basil, chili.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Thai Fried Rice</h4>
+            <p>Jasmine rice, egg, Chinese broccoli, cherry tomato.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pad Kra Pow</h4>
+            <p>Thai basil, garlic, chili, bell peppers, jasmine rice.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Tod Kra Tiam</h4>
+            <p>Garlic, pepper, sea salt, jasmine rice.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Broccoli Oyster Sauce</h4>
+            <p>Homemade brown sauce, broccoli, jasmine rice.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pad Pak Ruom</h4>
+            <p>Broccoli, carrot, cabbage, jasmine rice.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Pad Pak Boong</h4>
+            <p>Water spinach, chili, garlic, fermented bean sauce, jasmine rice.</p>
+        </div>
+
+
+        <!-- Sweets -->
+        <h3>Sweets</h3>
+        <div class="menu-item">
+            <h4>Kao Neaw Ma Muang 15</h4>
+            <p>Mango, sweet sticky rice, coconut milk.</p>
+        </div>
+        <div class="menu-item">
+            <h4>I Tim Boran 12</h4>
+            <p>Coconut ice cream, bun, sweet sticky rice, crushed peanuts.</p>
+        </div>
+        <div class="menu-item">
+            <h4>Bua Loy Ma Praw On 9</h4>
+            <p>Thai-style taro mochi, shredded young coconut meat, sweet coconut milk.</p>
+        </div>
+
+        <!-- Sides -->
+        <h3>Sides</h3>
+        <div class="menu-item">
+            <h4>Jasmine Rice 4</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Steamed Noodle 5</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Steamed Vegetables 5</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Talay’s Seafood Sauce (2 oz) 3</h4>
+        </div>
+        <div class="menu-item">
+            <h4>Jaew Sauce (2 oz) 3</h4>
+        </div>
+    </div>
+</div>
