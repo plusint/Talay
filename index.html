@@ -217,9 +217,10 @@
             right: 1.5rem;
             top: 50%;
             transform: translateY(-50%);
+            transform-origin: bottom center;
             font-size: 1.5rem;
             color: rgb(41, 84, 121);
-            transition: transform 0.3s ease;
+            transition: transform 0.15s ease;
         }
 
         details[open] summary {
@@ -227,7 +228,7 @@
         }
 
         details[open] summary::after {
-            transform: translateY(-50%) rotate(90deg);
+            transform: translate(-155%, -70%) rotate(90deg);
         }
 
         summary:hover,
