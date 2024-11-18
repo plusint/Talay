@@ -54,11 +54,17 @@
         }
 
         .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: rgb(41, 84, 121);
             text-decoration: none;
+            display: inline-block;
+        }
+
+        .logo-image {
+            height: 36px;
+            padding: 5px;
+            /* matches your current text height */
+            width: auto;
+            /* maintains aspect ratio */
+            vertical-align: middle;
         }
 
         .nav-links {
@@ -78,7 +84,7 @@
         }
 
         .nav-links a:hover {
-            color: #c6a87d;
+            color: #8B754F;
         }
 
         .hero {
@@ -448,7 +454,7 @@
         /* Mobile adjustments */
         @media (max-width: 768px) {
 
-            .about .container{
+            .about .container {
                 margin: 0;
             }
 
@@ -493,7 +499,9 @@
 <body>
     <header id="header">
         <nav class="container">
-            <a href="#" class="logo">Talay</a>
+            <a href="#" class="logo">
+                <img src="assets/talay.png" alt="Talay" class="logo-image">
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#offerings">Menu</a></li>
@@ -894,20 +902,23 @@
     </section>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const header = document.getElementById('header');
-            const hero = document.querySelector('.hero');
-            const heroHeight = hero.offsetHeight;
-            const scrollThreshold = heroHeight - header.offsetHeight;
-
-            window.addEventListener('scroll', function () {
-                if (window.pageYOffset > scrollThreshold) {
-                    header.classList.add('visible');
-                } else {
-                    header.classList.remove('visible');
-                }
+        (function () {
+            var _0x1a2b = ["DOMContentLoaded", "addEventListener", "getElementById", ".hero", "offsetHeight", "scrollThreshold", "scroll", "pageYOffset", "classList", "add", "remove", "visible"];
+            document[_0x1a2b[1]](_0x1a2b[0], function () {
+                var a = document[_0x1a2b[2]]('header'),
+                    b = document.querySelector(_0x1a2b[3]),
+                    c = b[_0x1a2b[4]],
+                    d = c - a.offsetHeight;
+                window[_0x1a2b[1]](_0x1a2b[6], function () {
+                    if (window[_0x1a2b[7]] > d) {
+                        a[_0x1a2b[8]][_0x1a2b[9]](_0x1a2b[11]);
+                    }
+                    else {
+                        a[_0x1a2b[8]][_0x1a2b[10]](_0x1a2b[11]);
+                    }
+                });
             });
-        });
+        })();
     </script>
 </body>
 
