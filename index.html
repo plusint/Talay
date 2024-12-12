@@ -250,11 +250,6 @@
             padding: 0 1.5rem;
             background-color: #fff;
         }
-        .menu-section-content > p {
-            position: relative;
-            font-size: 0.75rem;
-            top: -1rem;
-        }
 
         details[open] .menu-section-content {
             padding: 1.5rem 1.5rem;
@@ -283,6 +278,15 @@
             font-size: 1.2rem;
             font-weight: 400;
             color: #333;
+        }
+
+        .menu-item .additions, .additions {
+            position: relative;
+            font-size: 0.75rem;
+            top: -0.8rem;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: rgb(41, 84, 121);
         }
 
         .menu-item p {
@@ -571,13 +575,13 @@
                     <div class="menu-section-content">
                         <div class="menu-item">
                             <h4>Som Tum Thai</h4>
-                            <p>+ Grilled Shrimp</p>
+                            <p class="additions">+ Grilled Shrimp</p>
                             <p>Green papaya salad, Thai chili, garlic, fish sauce, lime, palm sugar, cherry tomato,
                                 peanut.</p>
                         </div>
                         <div class="menu-item">
                             <h4>Tum Kao Pode</h4>
-                            <p>+ Grilled Shrimp</p>
+                            <p class="additions">+ Grilled Shrimp</p>
                             <p>Sweet corn salad, garlic, Thai chili, fish sauce, lime, palm sugar, cherry tomato,
                                 peanut.</p>
                         </div>
@@ -595,12 +599,12 @@
                     <div class="menu-section-content">
                         <div class="menu-item">
                             <h4>Tom Yum</h4>
-                            <p>Available with Chicken, Shrimp, or Seafood.</p>
+                            <p class="additions">+ chicken | shrimp | seafood</p>
                             <p>Spicy and sour soup, mushroom, cherry tomato, aromatic Thai herbal broth.</p>
                         </div>
                         <div class="menu-item">
                             <h4>Tom Kha</h4>
-                            <p>Available with Chicken, Shrimp, or Seafood.</p>
+                            <p class="additions">+ chicken | shrimp | seafood</p>
                             <p>Creamy, spicy, and sour soup, mushroom, cherry tomato, aromatic Thai herbal broth.</p>
                         </div>
                         <div class="menu-item">
@@ -692,7 +696,7 @@
                 <details>
                     <summary>Curry</summary>
                     <div class="menu-section-content">
-                        <p> with jasmine rice </p>
+                        <p class="additions"> with jasmine rice </p>
                         <div class="menu-item">
                             <h4>Kaeng Phed Ped Yang</h4>
                             <p>Duck breast, red curry, cherry tomato, pineapple.</p>
@@ -716,7 +720,7 @@
                 <details>
                     <summary>Classics</summary>
                     <div class="menu-section-content">
-                        <p> + chicken, pork, beef, tofu, vegetable | shrimp | seafood</p>
+                        <p class="additions"> + chicken, pork, beef, tofu, vegetable | shrimp | seafood</p>
                         <div class="menu-item">
                             <h4>Pad Thai</h4>
                             <p>Thin rice noodles, egg, bean sprouts, scallion, peanut.</p>
@@ -881,13 +885,14 @@
     </section>
 
     <script>
-        ( () => {const _0x1a2b = ( () => {const _0x1a2c = [[68, 79, 77, 67, 111, 110, 116, 101, 110, 116, 76, 111, 97, 100, 101, 100],[97, 100, 100, 69, 118, 101, 110, 116, 76, 105, 115, 116, 101, 110, 101, 114],[103, 101, 116, 69, 108, 101, 109, 101, 110, 116, 66, 121, 73, 100], [46, 104, 101, 114, 111], [111, 102, 102, 115, 101, 116, 72, 101, 105, 103, 104, 116], [115, 99, 114, 111, 108, 108, 84, 104, 114, 101, 115, 104, 111, 108, 100],[115, 99, 114, 111, 108, 108], [112, 97, 103, 101, 89, 79, 102, 102, 115, 101, 116], [99, 108, 97, 115, 115, 76, 105, 115, 116], [97, 100, 100], [114, 101, 109, 111, 118, 101], [118, 105, 115, 105, 98, 108, 101]];return _0x1a2c.map( (_0x1a2d) =>  x.fromCharCode.apply(x, _0x1a2d));})();
+        (() => {
+            const _0x1a2b = (() => { const _0x1a2c = [[68, 79, 77, 67, 111, 110, 116, 101, 110, 116, 76, 111, 97, 100, 101, 100], [97, 100, 100, 69, 118, 101, 110, 116, 76, 105, 115, 116, 101, 110, 101, 114], [103, 101, 116, 69, 108, 101, 109, 101, 110, 116, 66, 121, 73, 100], [46, 104, 101, 114, 111], [111, 102, 102, 115, 101, 116, 72, 101, 105, 103, 104, 116], [115, 99, 114, 111, 108, 108, 84, 104, 114, 101, 115, 104, 111, 108, 100], [115, 99, 114, 111, 108, 108], [112, 97, 103, 101, 89, 79, 102, 102, 115, 101, 116], [99, 108, 97, 115, 115, 76, 105, 115, 116], [97, 100, 100], [114, 101, 109, 111, 118, 101], [118, 105, 115, 105, 98, 108, 101]]; return _0x1a2c.map((_0x1a2d) => x.fromCharCode.apply(x, _0x1a2d)); })();
             document[_0x1a2b[1]](_0x1a2b[0], function () {
                 const a = document[_0x1a2b[2]]('header'),
                     b = document.querySelector(_0x1a2b[3]),
                     c = b[_0x1a2b[4]],
                     d = c - a.offsetHeight;
-                window[_0x1a2b[1]](_0x1a2b[6], () => {(window[_0x1a2b[7]] > d) ? a[_0x1a2b[8]][_0x1a2b[9]](_0x1a2b[11]) : a[_0x1a2b[8]][_0x1a2b[10]](_0x1a2b[11]);});
+                window[_0x1a2b[1]](_0x1a2b[6], () => { (window[_0x1a2b[7]] > d) ? a[_0x1a2b[8]][_0x1a2b[9]](_0x1a2b[11]) : a[_0x1a2b[8]][_0x1a2b[10]](_0x1a2b[11]); });
             });
         })();
     </script>
