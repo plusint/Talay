@@ -33,7 +33,6 @@
         header {
             position: fixed;
             top: -100px;
-            /* Start off-screen */
             left: 0;
             right: 0;
             background-color: rgba(252, 251, 248, 0.9);
@@ -44,7 +43,6 @@
 
         header.visible {
             top: 0;
-            /* Slide in when class is added */
         }
 
         nav {
@@ -61,9 +59,7 @@
         .logo-image {
             height: 36px;
             padding: 5px;
-            /* matches your current text height */
             width: auto;
-            /* maintains aspect ratio */
             vertical-align: middle;
         }
 
@@ -115,7 +111,6 @@
         }
 
         .hero-logo {
-            /* clamp(minimum, preferred-value, maximum) */
             width: clamp(300px, 50vw, 500px);
             height: auto;
             margin-bottom: 20px;
@@ -299,8 +294,6 @@
             background-color: #f8f8f8;
         }
 
-        /* footer */
-
         .location {
             background-color: rgb(41, 84, 121);
             color: #fff;
@@ -397,44 +390,33 @@
             .footer {
                 margin: 0;
                 text-align: center;
-                /* Center all text in footer */
             }
 
             .location-content {
                 flex-direction: column;
                 gap: 30px;
                 align-items: center;
-                /* Center flex items horizontally */
             }
 
             .contact-item {
                 width: 100%;
-                /* Take full width */
                 text-align: center;
-                /* Center text within each item */
             }
 
-            /* Center the decorative line after h3 */
             .contact-item h3:after {
                 left: 50%;
-                /* Position line in center */
                 transform: translateX(-50%);
-                /* Offset line by half its width */
             }
 
             .address {
                 min-width: unset;
-                /* Remove the min-width constraint */
             }
 
             .address p {
                 max-width: none;
-                /* Remove max-width constraint */
                 margin: 0 auto;
-                /* Center the paragraph */
             }
 
-            /* Center the Instagram icon if present */
             .icon-wrapper {
                 margin: 0 auto;
             }
@@ -445,10 +427,7 @@
             }
         }
 
-
-        /* Mobile adjustments */
         @media (max-width: 768px) {
-
             .about .container {
                 margin: 0;
             }
@@ -464,7 +443,6 @@
             summary {
                 font-size: 1.5rem;
                 padding: 1rem;
-                /* text-align: center; */
             }
 
             .menu-section-content {
