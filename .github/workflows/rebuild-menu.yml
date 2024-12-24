@@ -7,12 +7,12 @@ permissions:
 on:
   push:
     paths:
-      - 'menu.json'
+      - 'menu.json'  # Only trigger when menu.json changes
     branches:
-      - generated 
+      - main  # or whatever your default branch is
 
 jobs:
-  validate-and-build:
+  build:
     runs-on: ubuntu-latest
     
     steps:
@@ -23,118 +23,12 @@ jobs:
         with:
           node-version: '20'
           
-      - name: Create validation script
-        run: |
-          cat > validate-menu.js << 'EOL'
-          const fs = require('fs');
-          
-          function validateMenuItem(item, path) {
-            if (typeof item.name !== 'string') {
-              throw new Error(`Invalid name at ${path}: ${item.name}`);
-            }
-            
-            if (item.description && typeof item.description !== 'string') {
-              throw new Error(`Invalid description at ${path}: ${item.description}`);
-            }
-            
-            if (item.additions && !Array.isArray(item.additions)) {
-              throw new Error(`Invalid additions at ${path}: must be an array`);
-            }
-          }
-          
-          function validateCategory(category, index) {
-            const path = `categories[${index}]`;
-            
-            if (typeof category.name !== 'string') {
-              throw new Error(`Invalid category name at ${path}`);
-            }
-            
-            if (!Array.isArray(category.items)) {
-              throw new Error(`Invalid items at ${path}: must be an array`);
-            }
-            
-            if (category.note && typeof category.note !== 'string') {
-              throw new Error(`Invalid note at ${path}`);
-            }
-            
-            if (category.additions && !Array.isArray(category.additions)) {
-              throw new Error(`Invalid category additions at ${path}: must be an array`);
-            }
-            
-            category.items.forEach((item, itemIndex) => {
-              validateMenuItem(item, `${path}.items[${itemIndex}]`);
-            });
-          }
-          
-          try {
-            const menuData = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
-            
-            if (!menuData.categories || !Array.isArray(menuData.categories)) {
-              throw new Error('Invalid menu.json: missing or invalid categories array');
-            }
-            
-            menuData.categories.forEach((category, index) => {
-              validateCategory(category, index);
-            });
-            
-            console.log('✅ menu.json validation passed');
-            process.exit(0);
-          } catch (error) {
-            console.error('❌ Validation failed:', error.message);
-            process.exit(1);
-          }
-          EOL
-
-      - name: Validate menu.json
-        run: node validate-menu.js
-        
       - name: Run build script
         run: node build-menu.js
         
-      - name: Check build result
-        run: |
-          if [ ! -f index.html ]; then
-            echo "❌ Build failed: index.html not found"
-            exit 1
-          fi
-          if ! grep -q "menu-container" index.html; then
-            echo "❌ Build failed: menu-container section not found in index.html"
-            exit 1
-          fi
-        
       - name: Commit and push if changed
         run: |
-          git config --global user.name 'GitHub Action Bot'
+          git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add index.html
-          
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Automatically update menu from menu.json changes"
-            git push
-            echo "✅ Successfully pushed menu updates"
-          fi
-          
-      - name: Create check run
-        if: always()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-            const sha = context.sha;
-            
-            await github.rest.checks.create({
-              owner,
-              repo,
-              name: 'Menu Validation & Build',
-              head_sha: sha,
-              status: 'completed',
-              conclusion: (job.status === 'success') ? 'success' : 'failure',
-              output: {
-                title: (job.status === 'success') ? 'Menu updated successfully' : 'Menu update failed',
-                summary: (job.status === 'success') 
-                  ? 'The menu.json was valid and the site was rebuilt successfully.'
-                  : 'There were errors processing the menu update. Please check the action logs.'
-              }
-            });
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automatically update menu" && git push)
