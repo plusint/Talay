@@ -9,7 +9,7 @@ on:
     paths:
       - 'menu.json'  # Only trigger when menu.json changes
     branches:
-      - main  # or whatever your default branch is
+      - generated 
 
 jobs:
   build:
