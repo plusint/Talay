@@ -1,5 +1,9 @@
 name: Rebuild Menu
 
+permissions:
+  contents: write    # Needed for pushing changes
+  checks: write      # Needed for creating check runs
+
 on:
   push:
     paths:
