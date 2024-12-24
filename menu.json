@@ -1,0 +1,290 @@
+{
+  "categories": [
+    {
+      "name": "Starters",
+      "items": [
+        {
+          "name": "Peek Gai Tod",
+          "description": "Thai-style fried chicken wings, sweet and sour sauce."
+        },
+        {
+          "name": "Tod Mun Goong",
+          "description": "Hand-pressed shrimp cakes, plum sauce."
+        },
+        {
+          "name": "Po Pia Tod",
+          "description": "Crispy spring rolls, sweet and sour sauce."
+        },
+        {
+          "name": "Goong Lui Suan",
+          "description": "Thai-style shrimp summer rolls, house special sauce."
+        },
+        {
+          "name": "Gaeng Keaw Wan Roti",
+          "description": "Roti bread, green curry dipping sauce."
+        },
+        {
+          "name": "Gam Pu Tod",
+          "description": "Crispy crab claws, plum sauce."
+        }
+      ]
+    },
+    {
+      "name": "Raw",
+      "items": [
+        {
+          "name": "Oysters",
+          "description": "Blue Point oysters, Talay's mignonette, golden crisp shallots, lemon."
+        },
+        {
+          "name": "Goong Chae Nam Pla",
+          "description": "Shrimp, sliced garlic, chili-lime dressing, mint."
+        },
+        {
+          "name": "Salmon Chae Nam Pla",
+          "description": "Sliced salmon crudo, citrus-chili dressing, garlic slices, mint."
+        },
+        {
+          "name": "Yum Ta Krai Salmon",
+          "description": "Lemongrass, Thai chili, mint, lime sauce."
+        }
+      ]
+    },
+    {
+      "name": "Salad",
+      "items": [
+        {
+          "name": "Som Tum Thai",
+          "description": "Green papaya salad, Thai chili, garlic, fish sauce, lime, palm sugar, cherry tomato, peanuts.",
+          "additions": ["grilled shrimp"]
+        },
+        {
+          "name": "Tum Kao Pode",
+          "description": "Sweet corn salad, garlic, Thai chili, fish sauce, lime, palm sugar, cherry tomato, peanuts.",
+          "additions": ["grilled shrimp"]
+        },
+        {
+          "name": "Yum Woon Sen Talay",
+          "description": "Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, white wood-ear mushrooms, lime sauce."
+        }
+      ]
+    },
+    {
+      "name": "Soup",
+      "items": [
+        {
+          "name": "Tom Yum",
+          "description": "Spicy and sour soup, mushroom, cherry tomato, aromatic Thai herbal broth.",
+          "additions": ["chicken", "shrimp", "seafood"]
+        },
+        {
+          "name": "Tom Kha",
+          "description": "Creamy, spicy, and sour soup, mushroom, cherry tomato, aromatic Thai herbal broth.",
+          "additions": ["chicken", "shrimp", "seafood"]
+        },
+        {
+          "name": "Yen Ta Fo Talay",
+          "description": "Spicy-sweet-tangy broth, mixed seafood, white wood-ear mushrooms, water spinach, fried wonton."
+        }
+      ]
+    },
+    {
+      "name": "Signature",
+      "items": [
+        {
+          "name": "Talay's Platter",
+          "description": "Grilled river prawn, grilled cuttlefish, steamed mussels, cilantro chili-lime relish."
+        },
+        {
+          "name": "Hor Mok Talay",
+          "description": "Mixed seafood, red curry, Thai basil, coconut meat."
+        },
+        {
+          "name": "Goong Ob Woon Sen",
+          "description": "Shrimp, glass noodles, Talay's signature wok sauce, cilantro, celery, cilantro chili-lime relish."
+        },
+        {
+          "name": "Goong Prik Kluea",
+          "description": "Fried shrimp, crispy garlic, Thai chili, pepper, sea salt."
+        },
+        {
+          "name": "Goong Muk Ga Ree",
+          "description": "Shrimp, calamari, curry powder, egg, scallion, sweet onion."
+        },
+        {
+          "name": "Pla Nueng Ma Now",
+          "description": "Steamed seabass fillet, aromatic lime broth, Thai chili, mint."
+        },
+        {
+          "name": "Pla Tod Yum Ma Muang",
+          "description": "Fried snapper fillet, green mango, Thai chili, cilantro, lime sauce."
+        },
+        {
+          "name": "Hoy Ob",
+          "description": "Steamed black mussels, aromatic lime broth, Thai basil, lemongrass."
+        },
+        {
+          "name": "Kao Pad Pu",
+          "description": "Crab lumps, jasmine rice, egg, scallion."
+        },
+        {
+          "name": "Kai Jeaw Pu",
+          "description": "Thai-style omelette, crab lumps, homemade seasoning."
+        },
+        {
+          "name": "Pu Nim Tod Kra Tiam",
+          "description": "Crispy soft-shell crab, garlic, pepper."
+        }
+      ]
+    },
+    {
+      "name": "Grilled",
+      "items": [
+        {
+          "name": "Goong Mae Nam",
+          "description": "Grilled river prawn, lime-chili dressing."
+        },
+        {
+          "name": "Pla Muk Yang",
+          "description": "Grilled cuttlefish, cilantro, lime, lime-chili dressing."
+        },
+        {
+          "name": "Sua Rong Hai",
+          "description": "House-marinated ribeye, roasted chili relish."
+        },
+        {
+          "name": "Ko Moo Yang",
+          "description": "House-marinated pork jaw, roasted chili relish."
+        },
+        {
+          "name": "Gai Satay",
+          "description": "Chicken breast, curry powder, cucumber salad, peanut sauce."
+        }
+      ]
+    },
+    {
+      "name": "Curry",
+      "note": "with jasmine rice",
+      "items": [
+        {
+          "name": "Kaeng Phed Ped Yang",
+          "description": "Duck breast, red curry, cherry tomato, pineapple."
+        },
+        {
+          "name": "Pa Nang Scallops",
+          "description": "Scallops, Pa Nang curry, kaffir lime, Thai chili."
+        },
+        {
+          "name": "Kaeng Dang Salmon",
+          "description": "Grilled salmon, red curry, bamboo shoots, bell peppers, Thai basil."
+        },
+        {
+          "name": "Keaw Wan Gai",
+          "description": "Chicken, green curry, bamboo shoots, bell peppers, Thai basil."
+        }
+      ]
+    },
+    {
+      "name": "Classics",
+      "additions": ["chicken, pork, beef, tofu, vegetable", "shrimp", "seafood"],
+      "items": [
+        {
+          "name": "Pad Thai",
+          "description": "Thin rice noodles, egg, bean sprouts, scallion, peanuts."
+        },
+        {
+          "name": "Pad See Ew",
+          "description": "Flat rice noodles, egg, Chinese broccoli."
+        },
+        {
+          "name": "Pad Kee Mow",
+          "description": "Flat rice noodles, bell peppers, Thai basil, chili."
+        },
+        {
+          "name": "Thai Fried Rice",
+          "description": "Jasmine rice, egg, Chinese broccoli, cherry tomato."
+        },
+        {
+          "name": "Pad Kra Pow",
+          "description": "Thai basil, garlic, chili, bell peppers, jasmine rice."
+        },
+        {
+          "name": "Tod Kra Tiam",
+          "description": "Garlic, pepper, sea salt, jasmine rice."
+        },
+        {
+          "name": "Broccoli Oyster Sauce",
+          "description": "Talay's signature wok sauce, broccoli, jasmine rice."
+        },
+        {
+          "name": "Pad Pak Ruom",
+          "description": "Broccoli, carrot, cabbage, jasmine rice."
+        },
+        {
+          "name": "Pad Pak Boong",
+          "description": "Water spinach, chili, garlic, fermented bean sauce, jasmine rice."
+        }
+      ]
+    },
+    {
+      "name": "Sweets",
+      "items": [
+        {
+          "name": "Kao Neaw Ma Muang",
+          "description": "Mango, sweet sticky rice, coconut milk."
+        },
+        {
+          "name": "I Tim Boran",
+          "description": "Coconut ice cream, bun, sweet sticky rice, crushed peanuts."
+        },
+        {
+          "name": "Bua Loy Ma Praw On",
+          "description": "Thai-style taro mochi, shredded young coconut meat, sweet coconut milk."
+        }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {
+          "name": "Jasmine Rice"
+        },
+        {
+          "name": "Steamed Noodle"
+        },
+        {
+          "name": "Steamed Vegetables"
+        },
+        {
+          "name": "Talay's Seafood Sauce (2 oz)"
+        },
+        {
+          "name": "Jaew (roasted chili) Sauce (2 oz)"
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "items": [
+        {
+          "name": "Thai Iced Tea"
+        },
+        {
+          "name": "Frozen Thai Iced Tea"
+        },
+        {
+          "name": "Butterfly Pea Lemonade"
+        },
+        {
+          "name": "Sodas"
+        },
+        {
+          "name": "Hot Coffee"
+        },
+        {
+          "name": "Hot Tea"
+        }
+      ]
+    }
+  ]
+}
