@@ -20,7 +20,7 @@
           "description": "Thai-style shrimp summer rolls, house special sauce."
         },
         {
-          "name": "Kaeng Keaw Wan Roti",
+          "name": "Gaeng Keaw Wan Roti",
           "description": "Roti bread, green curry dipping sauce."
         },
         {
@@ -167,7 +167,7 @@
       "note": "with jasmine rice",
       "items": [
         {
-          "name": "Kaeng Phed Ped Yang",
+          "name": "Gaeng Phed Ped Yang",
           "description": "Duck breast, red curry, cherry tomato, pineapple."
         },
         {
@@ -175,7 +175,7 @@
           "description": "Scallops, Pa Nang curry, kaffir lime, Thai chili."
         },
         {
-          "name": "Kaeng Dang Salmon",
+          "name": "Gaeng Dang Salmon",
           "description": "Grilled salmon, red curry, bamboo shoots, bell peppers, Thai basil."
         },
         {
