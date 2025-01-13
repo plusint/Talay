@@ -75,7 +75,7 @@
         {
           "name": "Tom Yum Nam Kon",
           "description": "Creamy spicy and sour soup, milk, mushroom, cherry tomato, Thai herbal broth.",
-          : ["chicken 19", "shrimp 24 ", "seafood 25"]
+          "additions": ["chicken 19", "shrimp 24 ", "seafood 25"]
         },
         {
           "name": "Tom Kha",
