@@ -231,16 +231,16 @@
       "name": "Sweets",
       "items": [
         {
-          "name": "Kao Neaw Ma Muang",
-          "description": "Mango, sweet sticky rice, coconut milk."
+          "name": "Kao Neaw Ma Muang  15",
+          "description": "Mango sticky rice, sweet coconut milk."
         },
         {
-          "name": "I Tim Boran",
-          "description": "Coconut ice cream, bun, sweet sticky rice, crushed peanuts."
+          "name": "I Tim Boran  12",
+          "description": "Thai-style coconut ice cream, bun, sweet sticky rice, palm seed, jackfruit, shredded young coconut."
         },
         {
-          "name": "Bua Loy Ma Praw On",
-          "description": "Thai-style taro mochi, shredded young coconut meat, sweet coconut milk."
+          "name": "Bua Loy Ma Praw On  9",
+          "description": "Soft and chewy taro balls, shredded young coconut, sweet coconut milk."
         }
       ]
     },
@@ -248,42 +248,47 @@
       "name": "Sides",
       "items": [
         {
-          "name": "Jasmine Rice"
+          "name": "Jasmine Rice  4"
         },
         {
-          "name": "Steamed Noodle"
+          "name": "Steamed Noodle  5"
         },
         {
-          "name": "Steamed Vegetables"
+          "name": "Steamed Vegetables  5"
         },
         {
-          "name": "Talay's Seafood Sauce (2 oz)"
+          "name": "Citrus chili relish  3"
         },
         {
-          "name": "Jaew (roasted chili) Sauce (2 oz)"
-        }
+          "name": "Cilantro chili relish  3"
+        },
+        {
+          "name": "Roasted chili relish  3"
       ]
     },
     {
       "name": "Beverages",
       "items": [
         {
-          "name": "Thai Iced Tea"
+          "name": "Thai Iced Tea  7"
         },
         {
-          "name": "Frozen Thai Iced Tea"
+          "name": "Frozen Thai Iced Tea  9"
         },
         {
-          "name": "Butterfly Pea Lemonade"
+          "name": "Talay’s iced latte  8"
         },
         {
-          "name": "Sodas"
+          "name": "Butterfly Pea Lemonade  6"
         },
         {
-          "name": "Hot Coffee"
+          "name": "Soda  5"
         },
         {
-          "name": "Hot Tea"
+          "name": "Hot Coffee  5"
+        },
+        {
+          "name": "Hot Tea  5"
         }
       ]
     }
