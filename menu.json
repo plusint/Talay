@@ -4,27 +4,27 @@
       "name": "Starters",
       "items": [
         {
-          "name": "Peek Gai Tod 12",
+          "name": "Peek Gai Tod  12",
           "description": "Thai-style marinated chicken wings, sweet Thai chili sauce."
         },
         {
-          "name": "Tod Mun Goong 14",
+          "name": "Tod Mun Goong  14",
           "description": "Hand-pressed shrimp cakes, plum sauce."
         },
         {
-          "name": "Po Pia Tod 7",
+          "name": "Po Pia Tod  7",
           "description": "Crispy vegetable spring rolls, sweet Thai chili sauce."
         },
         {
-          "name": "Goong Lui Suan 14",
+          "name": "Goong Lui Suan  14",
           "description": "Thai-style shrimp summer rolls, Thai basil, lettuce, julienne carrots, bean sprouts, cilantro, creamy chili-lime sauce."
         },
         {
-          "name": "Keaw Wan Roti 12",
+          "name": "Keaw Wan Roti  12",
           "description": "Crispy golden roti bread, green curry dipping sauce."
         },
         {
-          "name": "Gam Pu Tod 8",
+          "name": "Gam Pu Tod  8",
           "description": "Crispy crab claws, plum sauce."
         }
       ]
@@ -33,19 +33,19 @@
       "name": "Raw",
       "items": [
         {
-          "name": "Oysters half 18 / dozen 34",
+          "name": "Oysters   half 18 / dozen 34",
           "description": "Blue Point oysters, Talay's mignonette, golden crisp shallots, lemon."
         },
         {
-          "name": "Goong Chae Nam Pla 18",
+          "name": "Goong Chae Nam Pla  18",
           "description": "Shrimp, sliced garlic, mint, cilantro chili-lime dressing."
         },
         {
-          "name": "Salmon Chae Nam Pla 19",
+          "name": "Salmon Chae Nam Pla  19",
           "description": "Sliced salmon, salmon roe, mint, cilantro chili-lime dressing."
         },
         {
-          "name": "Yum Ta Krai Salmon 22",
+          "name": "Yum Ta Krai Salmon  22",
           "description": "Lemongrass salmon salad, Thai chili, mint, onion, lime dressing."
         }
       ]
@@ -54,17 +54,17 @@
       "name": "Salad",
       "items": [
         {
-          "name": "Som Tum Thai 15",
+          "name": "Som Tum Thai  15",
           "description": "Green papaya salad, Thai chili, garlic, cherry tomato, peanut, lime dressing.",
-          "additions": ["add grilled shrimp 20"]
+          "additions": ["grilled shrimp  20"]
         },
         {
           "name": "Tum Kao Pode 15",
           "description": "Sweet corn salad, Thai chili, garlic, cherry tomato, peanut, lime dressing.",
-          "additions": ["add grilled shrimp 20"]
+          "additions": ["grilled shrimp  20"]
         },
         {
-          "name": "Yum Woon Sen Talay 25",
+          "name": "Yum Woon Sen Talay  25",
           "description": "Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, white wood ear mushroom, lime dressing."
         }
       ]
@@ -75,7 +75,7 @@
         {
           "name": "Tom Yum Nam Kon",
           "description": "Creamy spicy and sour soup, milk, mushroom, cherry tomato, Thai herbal broth.",
-          "additions": ["chicken 19", "shrimp 24 ", "seafood 25"]
+          : ["chicken 19", "shrimp 24 ", "seafood 25"]
         },
         {
           "name": "Tom Kha",
