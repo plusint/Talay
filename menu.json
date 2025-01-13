@@ -92,47 +92,47 @@
       "name": "Signature",
       "items": [
         {
-          "name": "Talay's Platter",
-          "description": "Grilled river prawn, grilled cuttlefish, steamed mussels, cilantro chili-lime relish."
+          "name": "Talay's Platter  59",
+          "description": "Grilled river prawn, grilled cuttlefish, steamed mussels, citrus chili relish."
         },
         {
-          "name": "Hor Mok Talay",
-          "description": "Mixed seafood, red curry, Thai basil, coconut meat."
+          "name": "Hor Mok Talay  32",
+          "description": "Mixed seafood in red curry custard, egg, kaffir lime, rhizome, Thai basil, coconut milk."
         },
         {
-          "name": "Goong Ob Woon Sen",
-          "description": "Shrimp, glass noodles, Talay's signature wok sauce, cilantro, celery, cilantro chili-lime relish."
+          "name": "Goong Ob Woon Sen  25",
+          "description": "Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay’s signature wok sauce, cilantro chili relish."
         },
         {
-          "name": "Goong Prik Kluea",
-          "description": "Fried shrimp, crispy garlic, Thai chili, pepper, sea salt."
+          "name": "Goong Prik Kluea  25",
+          "description": "Golden fried shrimp, crispy garlic, bell peppers, Thai chili, black pepper, sea salt."
         },
         {
-          "name": "Goong Muk Ga Ree",
-          "description": "Shrimp, calamari, curry powder, egg, scallion, sweet onion."
+          "name": "Goong Muk Ga Ree  26",
+          "description": "Creamy shrimp and calamari stir-fried, curry powder, milk, egg, scallion, celery, sweet onion, bell pepper, chili oil."
         },
         {
-          "name": "Pla Nueng Ma Now",
+          "name": "Pla Nueng Ma Now  29",
           "description": "Steamed seabass fillet, aromatic lime broth, Thai chili, mint."
         },
         {
-          "name": "Pla Tod Yum Ma Muang",
-          "description": "Fried snapper fillet, green mango, Thai chili, cilantro, lime sauce."
+          "name": "Pla Tod Yum Ma Muang  29",
+          "description": "Golden fried snapper fillet, green mango, Thai chili, cilantro, lime dressing."
         },
         {
-          "name": "Hoy Ob",
-          "description": "Steamed black mussels, aromatic lime broth, Thai basil, lemongrass."
+          "name": "Hoy Ob  22",
+          "description": "Steamed black mussels, aromatic lime broth, Thai basil."
         },
         {
-          "name": "Kao Pad Pu",
-          "description": "Crab lumps, jasmine rice, egg, scallion."
+          "name": "Kao Pad Pu  27",
+          "description": "Crab lumps fried rice, egg, scallion, house seasoning."
         },
         {
-          "name": "Kai Jeaw Pu",
+          "name": "Kai Jeaw Pu  27",
           "description": "Thai-style omelette, crab lumps, homemade seasoning."
         },
         {
-          "name": "Pu Nim Tod Kra Tiam",
+          "name": "Pu Nim Tod Kra Tiam  22",
           "description": "Crispy soft-shell crab, garlic, pepper."
         }
       ]
@@ -141,30 +141,30 @@
       "name": "Grilled",
       "items": [
         {
-          "name": "Goong Mae Nam",
-          "description": "Grilled river prawn, lime-chili dressing."
+          "name": "Goong Mae Nam  MP",
+          "description": "Jumbo river prawn, citrus chili relish."
         },
         {
-          "name": "Pla Muk Yang",
-          "description": "Grilled cuttlefish, cilantro, lime, chili-lime dressing."
+          "name": "Pla Muk Yang  22",
+          "description": "Marinated cuttlefish, cilantro, citrus chili relish."
         },
         {
-          "name": "Sua Rong Hai",
+          "name": "Sua Rong Hai  22",
           "description": "House-marinated ribeye, roasted chili relish."
         },
         {
-          "name": "Ko Moo Yang",
-          "description": "House-marinated pork jaw, roasted chili relish."
+          "name": "Ko Moo Yang  19",
+          "description": "House-marinated pork jowl, roasted chili relish."
         },
         {
-          "name": "Gai Satay",
-          "description": "Chicken breast, curry powder, cucumber salad, peanut sauce."
+          "name": "Gai Satay  16",
+          "description": "Thai chicken skewers, curry powder, cucumber salad, peanut sauce."
         }
       ]
     },
     {
       "name": "Curry",
-      "note": "with jasmine rice",
+      "note": "Served with jasmine rice",
       "items": [
         {
           "name": "Gaeng Phed Ped Yang",
