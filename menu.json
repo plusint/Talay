@@ -33,8 +33,9 @@
       "name": "Raw",
       "items": [
         {
-          "name": "Oysters   half 18 / dozen 34",
+          "name": "Oysters",
           "description": "Blue Point oysters, Talay's mignonette, golden crisp shallots, lemon."
+          "additions": ["half 18 / dozen 34"]
         },
         {
           "name": "Goong Chae Nam Pla  18",
@@ -167,62 +168,62 @@
       "note": "Served with jasmine rice",
       "items": [
         {
-          "name": "Gaeng Phed Ped Yang",
-          "description": "Duck breast, red curry, cherry tomato, pineapple."
+          "name": "Gaeng Phed Ped Yang  27",
+          "description": "Roasted duck breast in red curry, cherry tomato, pineapple, Thai basil, coconut milk."
         },
         {
-          "name": "Pa Nang Scallops",
-          "description": "Scallops, Pa Nang curry, kaffir lime, Thai chili."
+          "name": "Pa Nang Scallops  29",
+          "description": "Seared scallops in Pa Nang curry, kaffir lime, Thai chili, coconut milk."
         },
         {
-          "name": "Gaeng Dang Salmon",
-          "description": "Grilled salmon, red curry, bamboo shoots, bell peppers, Thai basil."
+          "name": "Gaeng Dang Salmon  27",
+          "description": "Grilled salmon in red curry, bamboo shoots, bell peppers, Thai basil, coconut milk."
         },
         {
-          "name": "Keaw Wan Gai",
-          "description": "Chicken, green curry, bamboo shoots, bell peppers, Thai basil."
+          "name": "Keaw Wan Gai  22",
+          "description": "White meat chicken in green curry, bamboo shoots, bell peppers, Thai basil, coconut milk."
         }
       ]
     },
     {
       "name": "Classics",
-      "additions": ["chicken, pork, beef, tofu, vegetable", "shrimp", "seafood"],
+      "additions": ["chicken, pork, beef, tofu, vegetable  17", "shrimp  22", "seafood  25"],
       "items": [
         {
           "name": "Pad Thai",
-          "description": "Thin rice noodles, egg, bean sprouts, scallion, peanuts."
+          "description": "Thin rice noodles, egg, bean sprouts, scallion, peanut, sweet-tangy tamarind sauce."
         },
         {
           "name": "Pad See Ew",
-          "description": "Flat rice noodles, egg, Chinese broccoli."
+          "description": "Flat rice noodles, egg, Chinese broccoli, Talay’s signature wok sauce."
         },
         {
           "name": "Pad Kee Mow",
-          "description": "Flat rice noodles, bell peppers, Thai basil, chili."
+          "description": "Flat rice noodles, bell peppers, Thai basil, chili, Talay’s spicy wok sauce."
         },
         {
           "name": "Thai Fried Rice",
-          "description": "Jasmine rice, egg, Chinese broccoli, cherry tomato."
+          "description": "Jasmine rice, egg, Chinese broccoli, cherry tomato, house seasoning."
         },
         {
           "name": "Pad Kra Pow",
-          "description": "Thai basil, garlic, chili, bell peppers, jasmine rice."
+          "description": "Thai basil, garlic, chili, bell peppers, Talay’s spicy wok sauce. Served with jasmine rice."
         },
         {
           "name": "Tod Kra Tiam",
-          "description": "Garlic, pepper, sea salt, jasmine rice."
+          "description": "Garlic, pepper, sea salt, Talay’s signature wok sauce. Served with jasmine rice."
         },
         {
           "name": "Broccoli Oyster Sauce",
-          "description": "Talay's signature wok sauce, broccoli, jasmine rice."
+          "description": "Broccoli, Talay’s signature wok sauce. Served with jasmine rice."
         },
         {
           "name": "Pad Pak Ruom",
-          "description": "Broccoli, carrot, cabbage, jasmine rice."
+          "description": "Broccoli, carrot, cabbage, Talay’s signature wok sauce. Served with jasmine rice."
         },
         {
           "name": "Pad Pak Boong",
-          "description": "Water spinach, chili, garlic, fermented bean sauce, jasmine rice."
+          "description": "Water spinach, chili, garlic, fermented bean sauce, Talay’s signature wok sauce. Served with jasmine rice."
         }
       ]
     },
