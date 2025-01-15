@@ -245,27 +245,29 @@
       ]
     },
     {
-      "name": "Sides",
+      "name": "Zero Proof",
       "items": [
         {
-          "name": "Jasmine Rice  4"
+          "name": ""
+          "description": ""
         },
         {
-          "name": "Steamed Noodle  5"
+          "name": ""
+          "description": ""
         },
         {
-          "name": "Steamed Vegetables  5"
+          "name": ""
+          "description": ""
         },
         {
-          "name": "Citrus chili relish  3"
+          "name": ""
+          "description": ""
         },
         {
-          "name": "Cilantro chili relish  3"
-        },
-        {
-          "name": "Roasted chili relish  3"
-        },
-       ]
+          "name": ""
+          "description": ""
+        }
+      ]
     },
     {
       "name": "Beverages",
@@ -292,6 +294,29 @@
           "name": "Hot Tea 5"
         }
       ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {
+          "name": "Jasmine Rice  4"
+        },
+        {
+          "name": "Steamed Noodle  5"
+        },
+        {
+          "name": "Steamed Vegetables  5"
+        },
+        {
+          "name": "Citrus chili relish  3"
+        },
+        {
+          "name": "Cilantro chili relish  3"
+        },
+        {
+          "name": "Roasted chili relish  3"
+        },
+       ]
     }
   ]
 }
