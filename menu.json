@@ -34,7 +34,7 @@
       "items": [
         {
           "name": "Oysters",
-          "description": "Blue Point oysters, Talay's mignonette, golden crisp shallots, lemon."
+          "description": "Blue Point oysters, Talay's mignonette, golden crisp shallots, lemon.",
           "additions": ["half 18 / dozen 34"]
         },
         {
@@ -248,23 +248,23 @@
       "name": "Zero Proof",
       "items": [
         {
-          "name": ""
+          "name": "",
           "description": ""
         },
         {
-          "name": ""
+          "name": "",
           "description": ""
         },
         {
-          "name": ""
+          "name": "",
           "description": ""
         },
         {
-          "name": ""
+          "name": "",
           "description": ""
         },
         {
-          "name": ""
+          "name": "",
           "description": ""
         }
       ]
