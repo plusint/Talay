@@ -12,7 +12,7 @@
           "description": "Hand-pressed shrimp cakes, plum sauce"
         },
         {
-          "name": "Po Pia Tod  7",
+          "name": "Por Pia Tod  7",
           "description": "Crispy vegetable spring rolls, sweet Thai chili sauce"
         },
         {
@@ -60,12 +60,12 @@
           "additions": [" add grilled shrimp  5"]
         },
         {
-          "name": "Tum Kao Pode 15",
+          "name": "Tum Khao Pode 15",
           "description": "Sweet corn salad, Thai chili, garlic, tomato, peanut, lime dressing",
           "additions": ["add grilled shrimp  5"]
         },
         {
-          "name": "Yum Woon Sen Talay  25",
+          "name": "Yum Woon Sen Talay  23",
           "description": "Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, white wood ear mushroom, lime dressing"
         }
       ]
@@ -76,15 +76,15 @@
         {
           "name": "Tom Yum Nam Kon",
           "description": "Creamy spicy and sour soup, milk, mushroom, tomato, Thai herbal broth",
-          "additions": ["chicken 19", "shrimp 24 ", "seafood 25"]
+          "additions": ["chicken 19", "shrimp 22 ", "seafood 25"]
         },
         {
           "name": "Tom Kha",
           "description": "Coconut soup, galangal, mushroom, Thai herbal broth",
-          "additions": ["chicken 19", "shrimp 24", "seafood 28"]
+          "additions": ["chicken 19", "shrimp 22", "seafood 25"]
         },
         {
-          "name": "Yen Ta Fo Talay 30",
+          "name": "Yen Ta Fo Talay 27",
           "description": "Spicy-sweet-tangy soup, mixed seafood, white wood ear mushroom, water spinach, fried wonton"
         }
       ]
@@ -113,7 +113,7 @@
           "description": "Creamy shrimp and calamari stir-fried, curry powder, milk, egg, scallion, celery, sweet onion, bell pepper, chili oil"
         },
         {
-          "name": "Pla Nueng Ma Now  29",
+          "name": "Pla Nueng Ma Now  31",
           "description": "Steamed seabass fillet, lime broth, Thai chili, mint"
         },
         {
@@ -121,19 +121,19 @@
           "description": "Fried snapper fillet, green mango, cashews, red onion, Thai chili, cilantro, lime dressing"
         },
         {
-          "name": "Hoy Ob  22",
+          "name": "Hoy Ob  21",
           "description": "Steamed black mussels, lime broth, Thai basil."
         },
         {
-          "name": "Kao Pad Pu  27",
+          "name": "Kao Pad Pu  26",
           "description": "Lump crabmeat fried rice, egg, scallion, chili fish sauce"
         },
         {
-          "name": "Kai Jeaw Pu  27",
+          "name": "Kai Jeaw Pu  26",
           "description": "Thai-style omelette, lump crabmeat, Thai chili sauce"
         },
         {
-          "name": "Pu Nim Tod Kra Tiam  22",
+          "name": "Pu Nim Tod Kra Tiam  23",
           "description": "Crispy soft-shell crab, garlic, pepper"
         }
       ]
@@ -142,15 +142,15 @@
       "name": "Grilled",
       "items": [
         {
-          "name": "Goong Mae Nam  MP",
+          "name": "Goong Mae Nam  (MP)",
           "description": "Jumbo river prawn, citrus chili relish"
         },
         {
-          "name": "Pla Muk Yang  22",
+          "name": "Pla Muk Yang  21",
           "description": "Marinated cuttlefish, cilantro, citrus chili relish"
         },
         {
-          "name": "Sua Rong Hai  22",
+          "name": "Sua Rong Hai  21",
           "description": "House-marinated top sirloin, roasted chili relish"
         },
         {
@@ -231,7 +231,7 @@
       "name": "Sweets",
       "items": [
         {
-          "name": "Kao Neaw Ma Muang  15",
+          "name": "Khao Neaw Ma Muang  15",
           "description": "Mango sticky rice, sweet coconut milk"
         },
         {
@@ -261,7 +261,7 @@
         },
         {
           "name": "Tropical Canopy  10",
-          "description": "Fresh coconut water, pandan foam"
+          "description": "Fresh coconut water, coconut pandan foam"
         },
         {
           "name": "Milo Milo  10",
@@ -299,10 +299,10 @@
       "name": "Sides",
       "items": [
         {
-          "name": "Jasmine Rice  4"
+          "name": "Jasmine Rice  3"
         },
         {
-          "name": "Steamed Noodle  5"
+          "name": "Steamed Noodle  3"
         },
         {
           "name": "Steamed Vegetables  5"
