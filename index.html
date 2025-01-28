@@ -305,14 +305,16 @@
 
         .menu-item .price {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.0rem;
             color: #295479;
             font-weight: 500;
             margin-left: 1rem;
+            position: relative;
+            top: -0.5px;
         }
 
         .menu-item .price--side {
-            font-size: 1.0rem;
+            font-size: 0.9rem;
             margin-left: 0.75rem;
         }
 
@@ -556,27 +558,39 @@
                     <summary>Starters</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Peek Gai Tod  12</h4>
+                            <div class="menu-item-header">
+                                <h4>Peek Gai Tod</h4><span class="price">12</span>
+                            </div>
                             <p>Thai-style marinated chicken wings, sweet Thai chili sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Tod Mun Goong  14</h4>
+                            <div class="menu-item-header">
+                                <h4>Tod Mun Goong</h4><span class="price">14</span>
+                            </div>
                             <p>Hand-pressed shrimp cakes, plum sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Por Pia Tod  7</h4>
+                            <div class="menu-item-header">
+                                <h4>Por Pia Tod</h4><span class="price">7</span>
+                            </div>
                             <p>Crispy vegetable spring rolls, sweet Thai chili sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Goong Lui Suan  11</h4>
+                            <div class="menu-item-header">
+                                <h4>Goong Lui Suan</h4><span class="price">11</span>
+                            </div>
                             <p>Thai-style shrimp summer rolls, Thai basil, lettuce, julienne carrots, bean sprouts, cilantro, creamy chili-lime sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Keaw Wan Roti  12</h4>
+                            <div class="menu-item-header">
+                                <h4>Keaw Wan Roti</h4><span class="price">12</span>
+                            </div>
                             <p>Pan-fried roti bread, green curry dipping sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Gam Pu Tod  8</h4>
+                            <div class="menu-item-header">
+                                <h4>Gam Pu Tod</h4><span class="price">8</span>
+                            </div>
                             <p>Crispy crab claws, plum sauce</p>
                         </div>
                     </div>
@@ -585,20 +599,28 @@
                     <summary>Raw</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Oysters</h4>
-                            <p class="additions">+ half 18 / dozen 34</p>
+                            <div class="menu-item-header">
+                                <h4>Oysters</h4>
+                            </div>
+                            <p class="additions">half 18 | dozen 34</p>
                             <p>Blue Point oysters, Talay's mignonette, golden crisp shallots, lemon</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Goong Chae Nam Pla  18</h4>
+                            <div class="menu-item-header">
+                                <h4>Goong Chae Nam Pla</h4><span class="price">18</span>
+                            </div>
                             <p>Shrimp, sliced garlic, mint, cilantro chili-lime dressing</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Salmon Chae Nam Pla  19</h4>
+                            <div class="menu-item-header">
+                                <h4>Salmon Chae Nam Pla</h4><span class="price">19</span>
+                            </div>
                             <p>Sliced salmon, salmon roe, mint, cilantro chili-lime dressing</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Yum Ta Krai Salmon  19</h4>
+                            <div class="menu-item-header">
+                                <h4>Yum Ta Krai Salmon</h4><span class="price">19</span>
+                            </div>
                             <p>Lemongrass salmon salad, Thai chili, mint, onion, lime dressing</p>
                         </div>
                     </div>
@@ -607,17 +629,23 @@
                     <summary>Salad</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Som Tum Thai  15</h4>
-                            <p class="additions">+  add grilled shrimp  5</p>
+                            <div class="menu-item-header">
+                                <h4>Som Tum Thai</h4><span class="price">15</span>
+                            </div>
+                            <p class="additions">+ grilled shrimp 5</p>
                             <p>Green papaya salad, Thai chili, garlic, tomato, peanut, lime dressing</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Tum Khao Pode 15</h4>
-                            <p class="additions">+ add grilled shrimp  5</p>
+                            <div class="menu-item-header">
+                                <h4>Tum Khao Pode</h4><span class="price">15</span>
+                            </div>
+                            <p class="additions">+ grilled shrimp 5</p>
                             <p>Sweet corn salad, Thai chili, garlic, tomato, peanut, lime dressing</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Yum Woon Sen Talay  23</h4>
+                            <div class="menu-item-header">
+                                <h4>Yum Woon Sen Talay</h4><span class="price">23</span>
+                            </div>
                             <p>Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, lime dressing</p>
                         </div>
                     </div>
@@ -626,17 +654,23 @@
                     <summary>Soup</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Tom Yum Nam Kon</h4>
-                            <p class="additions">+ chicken 19 | shrimp 22  | seafood 25</p>
+                            <div class="menu-item-header">
+                                <h4>Tom Yum Nam Kon</h4>
+                            </div>
+                            <p class="additions">chicken 19 | shrimp 22 | seafood 25</p>
                             <p>Creamy spicy and sour soup, mushroom,evaporated milk, tomato, Thai herbal broth</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Tom Kha</h4>
-                            <p class="additions">+ chicken 19 | shrimp 22 | seafood 25</p>
+                            <div class="menu-item-header">
+                                <h4>Tom Kha</h4>
+                            </div>
+                            <p class="additions">chicken 19 | shrimp 22 | seafood 25</p>
                             <p>Coconut soup, galangal, mushroom, Thai herbal broth</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Yen Ta Fo Talay 27</h4>
+                            <div class="menu-item-header">
+                                <h4>Yen Ta Fo Talay</h4><span class="price">27</span>
+                            </div>
                             <p>Spicy-sweet-tangy soup, mixed seafood, water spinach, fried wonton</p>
                         </div>
                     </div>
@@ -645,47 +679,69 @@
                     <summary>Signature</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Talay's Platter  59</h4>
+                            <div class="menu-item-header">
+                                <h4>Talay's Platter</h4><span class="price">59</span>
+                            </div>
                             <p>Grilled river prawn, grilled cuttlefish, steamed mussels, citrus chili relish</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Hor Mok Talay  32</h4>
+                            <div class="menu-item-header">
+                                <h4>Hor Mok Talay</h4><span class="price">32</span>
+                            </div>
                             <p>Mixed seafood in red curry custard, egg, kaffir lime, rhizome, Thai basil, coconut milk</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Goong Ob Woon Sen  25</h4>
-                            <p>Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay’s signature wok sauce, cilantro chili relish</p>
+                            <div class="menu-item-header">
+                                <h4>Goong Ob Woon Sen</h4><span class="price">25</span>
+                            </div>
+                            <p>Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay's signature wok sauce, cilantro chili relish</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Goong Prik Kluea  25</h4>
+                            <div class="menu-item-header">
+                                <h4>Goong Prik Kluea</h4><span class="price">25</span>
+                            </div>
                             <p>Crispy fried shrimp, garlic, bell peppers, Thai chili, black pepper, sea salt, cilantro chili relish</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Goong Muk Ga Ree  26</h4>
+                            <div class="menu-item-header">
+                                <h4>Goong Muk Ga Ree</h4><span class="price">26</span>
+                            </div>
                             <p>Creamy shrimp and calamari stir-fried, curry powder, milk, egg, scallion, celery, sweet onion, bell pepper, chili oil</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pla Nueng Ma Now  35</h4>
+                            <div class="menu-item-header">
+                                <h4>Pla Nueng Ma Now</h4><span class="price">35</span>
+                            </div>
                             <p>Steamed Chilean seabass fillet, lime broth, Thai chili, mint</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pla Tod Yum Ma Muang  29</h4>
+                            <div class="menu-item-header">
+                                <h4>Pla Tod Yum Ma Muang</h4><span class="price">29</span>
+                            </div>
                             <p>Fried snapper fillet, green mango, cashews, radish, red onion, Thai chili, cilantro, lime dressing</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Hoy Ob  21</h4>
+                            <div class="menu-item-header">
+                                <h4>Hoy Ob</h4><span class="price">21</span>
+                            </div>
                             <p>Steamed black mussels, chili, Thai basil, lemongrass, lime broth</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Kao Pad Pu  26</h4>
+                            <div class="menu-item-header">
+                                <h4>Kao Pad Pu</h4><span class="price">26</span>
+                            </div>
                             <p>Lump crabmeat fried rice, egg, scallion, chili fish sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Kai Jeaw Pu  26</h4>
+                            <div class="menu-item-header">
+                                <h4>Kai Jeaw Pu</h4><span class="price">26</span>
+                            </div>
                             <p>Thai-style omelette, lump crabmeat, Thai chili sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pu Nim Tod Kra Tiam  23</h4>
+                            <div class="menu-item-header">
+                                <h4>Pu Nim Tod Kra Tiam</h4><span class="price">23</span>
+                            </div>
                             <p>Crispy soft-shell crab, garlic, pepper</p>
                         </div>
                     </div>
@@ -694,23 +750,33 @@
                     <summary>Grilled</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Goong Mae Nam  (MP)</h4>
+                            <div class="menu-item-header">
+                                <h4>Goong Mae Nam</h4><span class="price">(MP)</span>
+                            </div>
                             <p>Jumbo river prawn, citrus chili relish</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pla Muk Yang  21</h4>
+                            <div class="menu-item-header">
+                                <h4>Pla Muk Yang</h4><span class="price">21</span>
+                            </div>
                             <p>Marinated cuttlefish, cilantro, citrus chili relish</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Sua Rong Hai  21</h4>
+                            <div class="menu-item-header">
+                                <h4>Sua Rong Hai</h4><span class="price">21</span>
+                            </div>
                             <p>House-marinated picanha, roasted chili relish</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Kor Moo Yang  19</h4>
+                            <div class="menu-item-header">
+                                <h4>Kor Moo Yang</h4><span class="price">19</span>
+                            </div>
                             <p>House-marinated pork jowl, roasted chili relish</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Gai Satay  16</h4>
+                            <div class="menu-item-header">
+                                <h4>Gai Satay</h4><span class="price">16</span>
+                            </div>
                             <p>Thai chicken skewers, curry powder, cucumber salad, peanut sauce</p>
                         </div>
                     </div>
@@ -720,19 +786,27 @@
                     <div class="menu-section-content">
                         <p class="additions">Served with jasmine rice</p>
                         <div class="menu-item">
-                            <h4>Gaeng Phed Ped Yang  27</h4>
+                            <div class="menu-item-header">
+                                <h4>Gaeng Phed Ped Yang</h4><span class="price">27</span>
+                            </div>
                             <p>Roasted duck breast in red curry, tomato, pineapple, bell peppers, Thai basil, coconut milk</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pa Nang Scallops  29</h4>
+                            <div class="menu-item-header">
+                                <h4>Pa Nang Scallops</h4><span class="price">29</span>
+                            </div>
                             <p>Seared scallops in Pa Nang curry, kaffir lime, Thai chili, coconut milk</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Gaeng Dang Salmon  27</h4>
+                            <div class="menu-item-header">
+                                <h4>Gaeng Dang Salmon</h4><span class="price">27</span>
+                            </div>
                             <p>Grilled salmon in red curry, bamboo shoots, bell peppers, Thai basil, coconut milk</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Keaw Wan Gai  22</h4>
+                            <div class="menu-item-header">
+                                <h4>Keaw Wan Gai</h4><span class="price">22</span>
+                            </div>
                             <p>White meat chicken in green curry, bamboo shoots, bell peppers, Thai basil, coconut milk</p>
                         </div>
                     </div>
@@ -740,42 +814,60 @@
                 <details>
                     <summary>Classics</summary>
                     <div class="menu-section-content">
-                        <p class="additions">+ chicken, pork, beef, tofu, vegetable  17 | shrimp  22 | seafood  25</p>
+                        <p class="additions">• chicken, pork, beef, tofu, vegetable  17 | shrimp  22 | seafood  25</p>
                         <div class="menu-item">
-                            <h4>Pad Thai</h4>
+                            <div class="menu-item-header">
+                                <h4>Pad Thai</h4>
+                            </div>
                             <p>Thin rice noodles, egg, bean sprouts, scallion, peanut, sweet-tangy tamarind sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pad See Ew</h4>
-                            <p>Flat rice noodles, egg, Chinese broccoli, Talay’s signature wok sauce</p>
+                            <div class="menu-item-header">
+                                <h4>Pad See Ew</h4>
+                            </div>
+                            <p>Flat rice noodles, egg, Chinese broccoli, Talay's signature wok sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pad Kee Mow</h4>
-                            <p>Flat rice noodles, bell peppers, Thai basil, chili, Talay’s spicy wok sauce</p>
+                            <div class="menu-item-header">
+                                <h4>Pad Kee Mow</h4>
+                            </div>
+                            <p>Flat rice noodles, bell peppers, Thai basil, chili, Talay's spicy wok sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Thai Fried Rice</h4>
+                            <div class="menu-item-header">
+                                <h4>Thai Fried Rice</h4>
+                            </div>
                             <p>Jasmine rice, egg, Chinese broccoli, tomato, onion, Talay's signature wok sauce</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pad Kra Pow</h4>
-                            <p>Thai basil, garlic, chili, bell peppers, Talay’s spicy wok sauce. Served with jasmine rice</p>
+                            <div class="menu-item-header">
+                                <h4>Pad Kra Pow</h4>
+                            </div>
+                            <p>Thai basil, garlic, chili, bell peppers, Talay's spicy wok sauce. Served with jasmine rice</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Tod Kra Tiam</h4>
-                            <p>Garlic, pepper, sea salt, Talay’s signature wok sauce. Served with jasmine rice</p>
+                            <div class="menu-item-header">
+                                <h4>Tod Kra Tiam</h4>
+                            </div>
+                            <p>Garlic, pepper, sea salt, Talay's signature wok sauce. Served with jasmine rice</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Broccoli Oyster Sauce</h4>
-                            <p>Broccoli, Talay’s signature wok sauce. Served with jasmine rice</p>
+                            <div class="menu-item-header">
+                                <h4>Broccoli Oyster Sauce</h4>
+                            </div>
+                            <p>Broccoli, Talay's signature wok sauce. Served with jasmine rice</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pad Pak Ruom</h4>
-                            <p>Broccoli, carrot, cabbage, Talay’s signature wok sauce. Served with jasmine rice</p>
+                            <div class="menu-item-header">
+                                <h4>Pad Pak Ruom</h4>
+                            </div>
+                            <p>Broccoli, carrot, cabbage, Talay's signature wok sauce. Served with jasmine rice</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Pad Pak Boong</h4>
-                            <p>Water spinach, chili, garlic, fermented bean sauce, Talay’s signature wok sauce. Served with jasmine rice</p>
+                            <div class="menu-item-header">
+                                <h4>Pad Pak Boong</h4>
+                            </div>
+                            <p>Water spinach, chili, garlic, fermented bean sauce, Talay's signature wok sauce. Served with jasmine rice</p>
                         </div>
                     </div>
                 </details>
@@ -783,15 +875,21 @@
                     <summary>Sweets</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Khao Neaw Ma Muang  15</h4>
+                            <div class="menu-item-header">
+                                <h4>Khao Neaw Ma Muang</h4><span class="price">15</span>
+                            </div>
                             <p>Mango sticky rice, sweet coconut milk</p>
                         </div>
                         <div class="menu-item">
-                            <h4>I Tim Boran  12</h4>
+                            <div class="menu-item-header">
+                                <h4>I Tim Boran</h4><span class="price">12</span>
+                            </div>
                             <p>Thai-style coconut ice cream, bun, sweet sticky rice, palm seed, jackfruit, shredded young coconut</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Bua Loy Ma Praw On  9</h4>
+                            <div class="menu-item-header">
+                                <h4>Bua Loy Ma Praw On</h4><span class="price">9</span>
+                            </div>
                             <p>Soft and chewy taro balls, shredded young coconut, sweet coconut milk</p>
                         </div>
                     </div>
@@ -800,23 +898,33 @@
                     <summary>Zero Proof</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <h4>Pomelicious  10</h4>
+                            <div class="menu-item-header">
+                                <h4>Pomelicious</h4><span class="price">10</span>
+                            </div>
                             <p>Lychee juice, pomegranate syrup, lemon, egg-free foamer</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Honey’s Passion  10</h4>
+                            <div class="menu-item-header">
+                                <h4>Honey's Passion</h4><span class="price">10</span>
+                            </div>
                             <p>Passion fruit honey puree, brown sugar, lemon, seltzer</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Wonderpop  10</h4>
+                            <div class="menu-item-header">
+                                <h4>Wonderpop</h4><span class="price">10</span>
+                            </div>
                             <p>Watermelon puree, Sala fruit syrup</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Tropical Canopy  10</h4>
+                            <div class="menu-item-header">
+                                <h4>Tropical Canopy</h4><span class="price">10</span>
+                            </div>
                             <p>Fresh coconut water, coconut pandan foam</p>
                         </div>
                         <div class="menu-item">
-                            <h4>Milo Milo  10</h4>
+                            <div class="menu-item-header">
+                                <h4>Milo Milo</h4><span class="price">10</span>
+                            </div>
                             <p>Milo malted chocolate, brown sugar, creamy milk</p>
                         </div>
                     </div>
@@ -825,31 +933,49 @@
                     <summary>Beverages</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <p>Thai Iced Tea  7</p>
+                            <div class="menu-item-header">
+                                <p>Thai iced tea</p><span class="price price--side">7</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Frozen Thai Iced Tea  8</p>
+                            <div class="menu-item-header">
+                                <p>Thai tea slushy</p><span class="price price--side">8</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Talay’s iced latte  8</p>
+                            <div class="menu-item-header">
+                                <p>Talay's iced latte</p><span class="price price--side">8</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Fresh coconut  10</p>
+                            <div class="menu-item-header">
+                                <p>Fresh coconut</p><span class="price price--side">10</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Soda  5</p>
+                            <div class="menu-item-header">
+                                <p>Soda</p><span class="price price--side">5</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Hot coffee  5</p>
+                            <div class="menu-item-header">
+                                <p>Hot coffee</p><span class="price price--side">5</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Hot tea 5</p>
+                            <div class="menu-item-header">
+                                <p>Hot tea</p><span class="price price--side">5</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Saratoga still water 8</p>
+                            <div class="menu-item-header">
+                                <p>Saratoga still water</p><span class="price price--side">8</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Saratoga sparkling water 8</p>
+                            <div class="menu-item-header">
+                                <p>Saratoga sparkling water</p><span class="price price--side">8</span>
+                            </div>
                         </div>
                     </div>
                 </details>
@@ -857,31 +983,49 @@
                     <summary>Sides</summary>
                     <div class="menu-section-content">
                         <div class="menu-item">
-                            <p>Jasmine rice  3</p>
+                            <div class="menu-item-header">
+                                <p>Jasmine rice</p><span class="price price--side">3</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Sticky rice  4</p>
+                            <div class="menu-item-header">
+                                <p>Sticky rice</p><span class="price price--side">4</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Roti  4</p>
+                            <div class="menu-item-header">
+                                <p>Roti</p><span class="price price--side">4</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Fried egg 3</p>
+                            <div class="menu-item-header">
+                                <p>Fried egg</p><span class="price price--side">3</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Steamed noodle  3</p>
+                            <div class="menu-item-header">
+                                <p>Steamed noodle</p><span class="price price--side">3</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Steamed vegetables  5</p>
+                            <div class="menu-item-header">
+                                <p>Steamed vegetables</p><span class="price price--side">5</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Citrus chili relish  3</p>
+                            <div class="menu-item-header">
+                                <p>Citrus chili relish</p><span class="price price--side">3</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Cilantro chili relish  3</p>
+                            <div class="menu-item-header">
+                                <p>Cilantro chili relish</p><span class="price price--side">3</span>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <p>Roasted chili relish  3</p>
+                            <div class="menu-item-header">
+                                <p>Roasted chili relish</p><span class="price price--side">3</span>
+                            </div>
                         </div>
                     </div>
                 </details></div><!-- end menu-container -->
