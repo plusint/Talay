@@ -37,6 +37,7 @@
     },
     {
       "name": "Raw",
+      "note": "* consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.",
       "items": [
         {
           "name": "Oysters",
