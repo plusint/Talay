@@ -122,7 +122,7 @@
         },
         {
           "name": "Hoy Ob  21",
-          "description": "Steamed black mussels, chili, Thai basil, lime broth"
+          "description": "Steamed black mussels, chili, Thai basil, lemongrass, lime broth"
         },
         {
           "name": "Kao Pad Pu  26",
@@ -305,16 +305,22 @@
       "name": "Sides",
       "items": [
         {
-          "name": "Jasmine Rice  3"
+          "name": "Jasmine rice  3"
         },
         {
-          "name": "Roti  4"
+          "name": "Sticky rice  4"
         },
         {
-          "name": "Steamed Noodle  3"
+           "name": "Roti  4"
         },
         {
-          "name": "Steamed Vegetables  5"
+           "name": "Fried egg 3"
+        },
+        {
+          "name": "Steamed noodle  3"
+        },
+        {
+          "name": "Steamed vegetables  5"
         },
         {
           "name": "Citrus chili relish  3"
