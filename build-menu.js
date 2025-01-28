@@ -27,7 +27,7 @@ function generateMenuItemHtml(item, categoryName) {
         }
         if (item.options) {
             html += `
-                            <p class="additions">${item.options.join(' | ')}</p>`;
+                            <p class="additions options">${item.options.join(' | ')}</p>`;
         }
         if (item.description) {
             html += `
