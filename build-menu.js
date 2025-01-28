@@ -8,16 +8,16 @@ function generateMenuItemHtml(item, categoryName) {
 
     // Special handling for Sides and Beverages sections
     if (categoryName === "Sides" || categoryName === "Beverages") {
+        const headerContent = `<p>${item.name}</p>${item.price ? `<span class="price price--side">${item.price}</span>` : ''}`;
         html += `
                             <div class="menu-item-header">
-                                <p>${item.name}</p>
-                                ${item.price ? `<span class="price price--side">${item.price}</span>` : ''}
+                                ${headerContent}
                             </div>`;
     } else {
+        const headerContent = `<h4>${item.name}</h4>${item.price ? `<span class="price">${item.price}</span>` : ''}`;
         html += `
                             <div class="menu-item-header">
-                                <h4>${item.name}</h4>
-                                ${item.price ? `<span class="price">${item.price}</span>` : ''}
+                                ${headerContent}
                             </div>`;
 
         // Add additions, options, and descriptions
