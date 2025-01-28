@@ -4,28 +4,34 @@
       "name": "Starters",
       "items": [
         {
-          "name": "Peek Gai Tod  12",
-          "description": "Thai-style marinated chicken wings, sweet Thai chili sauce"
+          "name": "Peek Gai Tod",
+          "description": "Thai-style marinated chicken wings, sweet Thai chili sauce",
+          "price": 12
         },
         {
-          "name": "Tod Mun Goong  14",
-          "description": "Hand-pressed shrimp cakes, plum sauce"
+          "name": "Tod Mun Goong",
+          "description": "Hand-pressed shrimp cakes, plum sauce",
+          "price": 14
         },
         {
-          "name": "Por Pia Tod  7",
-          "description": "Crispy vegetable spring rolls, sweet Thai chili sauce"
+          "name": "Por Pia Tod",
+          "description": "Crispy vegetable spring rolls, sweet Thai chili sauce",
+          "price": 7
         },
         {
-          "name": "Goong Lui Suan  11",
-          "description": "Thai-style shrimp summer rolls, Thai basil, lettuce, julienne carrots, bean sprouts, cilantro, creamy chili-lime sauce"
+          "name": "Goong Lui Suan",
+          "description": "Thai-style shrimp summer rolls, Thai basil, lettuce, julienne carrots, bean sprouts, cilantro, creamy chili-lime sauce",
+          "price": 11
         },
         {
-          "name": "Keaw Wan Roti  12",
-          "description": "Pan-fried roti bread, green curry dipping sauce"
+          "name": "Keaw Wan Roti",
+          "description": "Pan-fried roti bread, green curry dipping sauce",
+          "price": 12
         },
         {
-          "name": "Gam Pu Tod  8",
-          "description": "Crispy crab claws, plum sauce"
+          "name": "Gam Pu Tod",
+          "description": "Crispy crab claws, plum sauce",
+          "price": 8
         }
       ]
     },
@@ -35,19 +41,22 @@
         {
           "name": "Oysters",
           "description": "Blue Point oysters, Talay's mignonette, golden crisp shallots, lemon",
-          "additions": ["half 18 / dozen 34"]
+          "options": ["half 18", "dozen 34"]
         },
         {
-          "name": "Goong Chae Nam Pla  18",
-          "description": "Shrimp, sliced garlic, mint, cilantro chili-lime dressing"
+          "name": "Goong Chae Nam Pla",
+          "description": "Shrimp, sliced garlic, mint, cilantro chili-lime dressing",
+          "price": 18
         },
         {
-          "name": "Salmon Chae Nam Pla  19",
-          "description": "Sliced salmon, salmon roe, mint, cilantro chili-lime dressing"
+          "name": "Salmon Chae Nam Pla",
+          "description": "Sliced salmon, salmon roe, mint, cilantro chili-lime dressing",
+          "price": 19
         },
         {
-          "name": "Yum Ta Krai Salmon  19",
-          "description": "Lemongrass salmon salad, Thai chili, mint, onion, lime dressing"
+          "name": "Yum Ta Krai Salmon",
+          "description": "Lemongrass salmon salad, Thai chili, mint, onion, lime dressing",
+          "price": 19
         }
       ]
     },
@@ -55,18 +64,21 @@
       "name": "Salad",
       "items": [
         {
-          "name": "Som Tum Thai  15",
+          "name": "Som Tum Thai",
           "description": "Green papaya salad, Thai chili, garlic, tomato, peanut, lime dressing",
-          "additions": [" add grilled shrimp  5"]
+          "additions": ["grilled shrimp 5"],
+          "price": 15
         },
         {
-          "name": "Tum Khao Pode 15",
+          "name": "Tum Khao Pode",
           "description": "Sweet corn salad, Thai chili, garlic, tomato, peanut, lime dressing",
-          "additions": ["add grilled shrimp  5"]
+          "additions": ["grilled shrimp 5"],
+          "price": 15
         },
         {
-          "name": "Yum Woon Sen Talay  23",
-          "description": "Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, lime dressing"
+          "name": "Yum Woon Sen Talay",
+          "description": "Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, lime dressing",
+          "price": 23
         }
       ]
     },
@@ -75,17 +87,18 @@
       "items": [
         {
           "name": "Tom Yum Nam Kon",
-          "description": "Creamy spicy and sour soup, mushroom,evaporated milk, tomato, Thai herbal broth",
-          "additions": ["chicken 19", "shrimp 22 ", "seafood 25"]
+          "description": "Creamy spicy and sour soup, mushroom, evaporated milk, tomato, Thai herbal broth",
+          "options": ["chicken 19", "shrimp 22", "seafood 25"]
         },
         {
           "name": "Tom Kha",
           "description": "Coconut soup, galangal, mushroom, Thai herbal broth",
-          "additions": ["chicken 19", "shrimp 22", "seafood 25"]
+          "options": ["chicken 19", "shrimp 22", "seafood 25"]
         },
         {
-          "name": "Yen Ta Fo Talay 27",
-          "description": "Spicy-sweet-tangy soup, mixed seafood, water spinach, fried wonton"
+          "name": "Yen Ta Fo Talay",
+          "description": "Spicy-sweet-tangy soup, mixed seafood, water spinach, fried wonton",
+          "price": 27
         }
       ]
     },
@@ -93,48 +106,59 @@
       "name": "Signature",
       "items": [
         {
-          "name": "Talay's Platter  59",
-          "description": "Grilled river prawn, grilled cuttlefish, steamed mussels, citrus chili relish"
+          "name": "Talay's Platter",
+          "description": "Grilled river prawn, grilled cuttlefish, steamed mussels, citrus chili relish",
+          "price": 59
         },
         {
-          "name": "Hor Mok Talay  32",
-          "description": "Mixed seafood in red curry custard, egg, kaffir lime, rhizome, Thai basil, coconut milk"
+          "name": "Hor Mok Talay",
+          "description": "Mixed seafood in red curry custard, egg, kaffir lime, rhizome, Thai basil, coconut milk",
+          "price": 32
         },
         {
-          "name": "Goong Ob Woon Sen  25",
-          "description": "Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay’s signature wok sauce, cilantro chili relish"
+          "name": "Goong Ob Woon Sen",
+          "description": "Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay's signature wok sauce, cilantro chili relish",
+          "price": 25
         },
         {
-          "name": "Goong Prik Kluea  25",
-          "description": "Crispy fried shrimp, garlic, bell peppers, Thai chili, black pepper, sea salt, cilantro chili relish"
+          "name": "Goong Prik Kluea",
+          "description": "Crispy fried shrimp, garlic, bell peppers, Thai chili, black pepper, sea salt, cilantro chili relish",
+          "price": 25
         },
         {
-          "name": "Goong Muk Ga Ree  26",
-          "description": "Creamy shrimp and calamari stir-fried, curry powder, milk, egg, scallion, celery, sweet onion, bell pepper, chili oil"
+          "name": "Goong Muk Ga Ree",
+          "description": "Creamy shrimp and calamari stir-fried, curry powder, milk, egg, scallion, celery, sweet onion, bell pepper, chili oil",
+          "price": 26
         },
         {
-          "name": "Pla Nueng Ma Now  35",
-          "description": "Steamed Chilean seabass fillet, lime broth, Thai chili, mint"
+          "name": "Pla Nueng Ma Now",
+          "description": "Steamed Chilean seabass fillet, lime broth, Thai chili, mint",
+          "price": 35
         },
         {
-          "name": "Pla Tod Yum Ma Muang  29",
-          "description": "Fried snapper fillet, green mango, cashews, radish, red onion, Thai chili, cilantro, lime dressing"
+          "name": "Pla Tod Yum Ma Muang",
+          "description": "Fried snapper fillet, green mango, cashews, radish, red onion, Thai chili, cilantro, lime dressing",
+          "price": 29
         },
         {
-          "name": "Hoy Ob  21",
-          "description": "Steamed black mussels, chili, Thai basil, lemongrass, lime broth"
+          "name": "Hoy Ob",
+          "description": "Steamed black mussels, chili, Thai basil, lemongrass, lime broth",
+          "price": 21
         },
         {
-          "name": "Kao Pad Pu  26",
-          "description": "Lump crabmeat fried rice, egg, scallion, chili fish sauce"
+          "name": "Kao Pad Pu",
+          "description": "Lump crabmeat fried rice, egg, scallion, chili fish sauce",
+          "price": 26
         },
         {
-          "name": "Kai Jeaw Pu  26",
-          "description": "Thai-style omelette, lump crabmeat, Thai chili sauce"
+          "name": "Kai Jeaw Pu",
+          "description": "Thai-style omelette, lump crabmeat, Thai chili sauce",
+          "price": 26
         },
         {
-          "name": "Pu Nim Tod Kra Tiam  23",
-          "description": "Crispy soft-shell crab, garlic, pepper"
+          "name": "Pu Nim Tod Kra Tiam",
+          "description": "Crispy soft-shell crab, garlic, pepper",
+          "price": 23
         }
       ]
     },
@@ -142,24 +166,29 @@
       "name": "Grilled",
       "items": [
         {
-          "name": "Goong Mae Nam  (MP)",
-          "description": "Jumbo river prawn, citrus chili relish"
+          "name": "Goong Mae Nam",
+          "description": "Jumbo river prawn, citrus chili relish",
+          "price": "(MP)"
         },
         {
-          "name": "Pla Muk Yang  21",
-          "description": "Marinated cuttlefish, cilantro, citrus chili relish"
+          "name": "Pla Muk Yang",
+          "description": "Marinated cuttlefish, cilantro, citrus chili relish",
+          "price": 21
         },
         {
-          "name": "Sua Rong Hai  21",
-          "description": "House-marinated picanha, roasted chili relish"
+          "name": "Sua Rong Hai",
+          "description": "House-marinated picanha, roasted chili relish",
+          "price": 21
         },
         {
-          "name": "Kor Moo Yang  19",
-          "description": "House-marinated pork jowl, roasted chili relish"
+          "name": "Kor Moo Yang",
+          "description": "House-marinated pork jowl, roasted chili relish",
+          "price": 19
         },
         {
-          "name": "Gai Satay  16",
-          "description": "Thai chicken skewers, curry powder, cucumber salad, peanut sauce"
+          "name": "Gai Satay",
+          "description": "Thai chicken skewers, curry powder, cucumber salad, peanut sauce",
+          "price": 16
         }
       ]
     },
@@ -168,26 +197,30 @@
       "note": "Served with jasmine rice",
       "items": [
         {
-          "name": "Gaeng Phed Ped Yang  27",
-          "description": "Roasted duck breast in red curry, tomato, pineapple, bell peppers, Thai basil, coconut milk"
+          "name": "Gaeng Phed Ped Yang",
+          "description": "Roasted duck breast in red curry, tomato, pineapple, bell peppers, Thai basil, coconut milk",
+          "price": 27
         },
         {
-          "name": "Pa Nang Scallops  29",
-          "description": "Seared scallops in Pa Nang curry, kaffir lime, Thai chili, coconut milk"
+          "name": "Pa Nang Scallops",
+          "description": "Seared scallops in Pa Nang curry, kaffir lime, Thai chili, coconut milk",
+          "price": 29
         },
         {
-          "name": "Gaeng Dang Salmon  27",
-          "description": "Grilled salmon in red curry, bamboo shoots, bell peppers, Thai basil, coconut milk"
+          "name": "Gaeng Dang Salmon",
+          "description": "Grilled salmon in red curry, bamboo shoots, bell peppers, Thai basil, coconut milk",
+          "price": 27
         },
         {
-          "name": "Keaw Wan Gai  22",
-          "description": "White meat chicken in green curry, bamboo shoots, bell peppers, Thai basil, coconut milk"
+          "name": "Keaw Wan Gai",
+          "description": "White meat chicken in green curry, bamboo shoots, bell peppers, Thai basil, coconut milk",
+          "price": 22
         }
       ]
     },
     {
       "name": "Classics",
-      "additions": ["chicken, pork, beef, tofu, vegetable  17", "shrimp  22", "seafood  25"],
+      "options": ["chicken, pork, beef, tofu, vegetable 17", "shrimp 22", "seafood 25"],
       "items": [
         {
           "name": "Pad Thai",
@@ -195,11 +228,11 @@
         },
         {
           "name": "Pad See Ew",
-          "description": "Flat rice noodles, egg, Chinese broccoli, Talay’s signature wok sauce"
+          "description": "Flat rice noodles, egg, Chinese broccoli, Talay's signature wok sauce"
         },
         {
           "name": "Pad Kee Mow",
-          "description": "Flat rice noodles, bell peppers, Thai basil, chili, Talay’s spicy wok sauce"
+          "description": "Flat rice noodles, bell peppers, Thai basil, chili, Talay's spicy wok sauce"
         },
         {
           "name": "Thai Fried Rice",
@@ -207,23 +240,23 @@
         },
         {
           "name": "Pad Kra Pow",
-          "description": "Thai basil, garlic, chili, bell peppers, Talay’s spicy wok sauce. Served with jasmine rice"
+          "description": "Thai basil, garlic, chili, bell peppers, Talay's spicy wok sauce. Served with jasmine rice"
         },
         {
           "name": "Tod Kra Tiam",
-          "description": "Garlic, pepper, sea salt, Talay’s signature wok sauce. Served with jasmine rice"
+          "description": "Garlic, pepper, sea salt, Talay's signature wok sauce. Served with jasmine rice"
         },
         {
           "name": "Broccoli Oyster Sauce",
-          "description": "Broccoli, Talay’s signature wok sauce. Served with jasmine rice"
+          "description": "Broccoli, Talay's signature wok sauce. Served with jasmine rice"
         },
         {
           "name": "Pad Pak Ruom",
-          "description": "Broccoli, carrot, cabbage, Talay’s signature wok sauce. Served with jasmine rice"
+          "description": "Broccoli, carrot, cabbage, Talay's signature wok sauce. Served with jasmine rice"
         },
         {
           "name": "Pad Pak Boong",
-          "description": "Water spinach, chili, garlic, fermented bean sauce, Talay’s signature wok sauce. Served with jasmine rice"
+          "description": "Water spinach, chili, garlic, fermented bean sauce, Talay's signature wok sauce. Served with jasmine rice"
         }
       ]
     },
@@ -231,16 +264,19 @@
       "name": "Sweets",
       "items": [
         {
-          "name": "Khao Neaw Ma Muang  15",
-          "description": "Mango sticky rice, sweet coconut milk"
+          "name": "Khao Neaw Ma Muang",
+          "description": "Mango sticky rice, sweet coconut milk",
+          "price": 15
         },
         {
-          "name": "I Tim Boran  12",
-          "description": "Thai-style coconut ice cream, bun, sweet sticky rice, palm seed, jackfruit, shredded young coconut"
+          "name": "I Tim Boran",
+          "description": "Thai-style coconut ice cream, bun, sweet sticky rice, palm seed, jackfruit, shredded young coconut",
+          "price": 12
         },
         {
-          "name": "Bua Loy Ma Praw On  9",
-          "description": "Soft and chewy taro balls, shredded young coconut, sweet coconut milk"
+          "name": "Bua Loy Ma Praw On",
+          "description": "Soft and chewy taro balls, shredded young coconut, sweet coconut milk",
+          "price": 9
         }
       ]
     },
@@ -248,24 +284,29 @@
       "name": "Zero Proof",
       "items": [
         {
-          "name": "Pomelicious  10",
-          "description": "Lychee juice, pomegranate syrup, lemon, egg-free foamer"
+          "name": "Pomelicious",
+          "description": "Lychee juice, pomegranate syrup, lemon, egg-free foamer",
+          "price": 10
         },
         {
-          "name": "Honey’s Passion  10",
-          "description": "Passion fruit honey puree, brown sugar, lemon, seltzer"
+          "name": "Honey's Passion",
+          "description": "Passion fruit honey puree, brown sugar, lemon, seltzer",
+          "price": 10
         },
         {
-          "name": "Wonderpop  10",
-          "description": "Watermelon puree, Sala fruit syrup"
+          "name": "Wonderpop",
+          "description": "Watermelon puree, Sala fruit syrup",
+          "price": 10
         },
         {
-          "name": "Tropical Canopy  10",
-          "description": "Fresh coconut water, coconut pandan foam"
+          "name": "Tropical Canopy",
+          "description": "Fresh coconut water, coconut pandan foam",
+          "price": 10
         },
         {
-          "name": "Milo Milo  10",
-          "description": "Milo malted chocolate, brown sugar, creamy milk"
+          "name": "Milo Milo",
+          "description": "Milo malted chocolate, brown sugar, creamy milk",
+          "price": 10
         }
       ]
     },
@@ -273,31 +314,40 @@
       "name": "Beverages",
       "items": [
         {
-          "name": "Thai Iced Tea  7"
+          "name": "Thai iced tea",
+          "price": 7
         },
         {
-          "name": "Frozen Thai Iced Tea  8"
+          "name": "Thai tea slushy",
+          "price": 8
         },
         {
-          "name": "Talay’s iced latte  8"
+          "name": "Talay's iced latte",
+          "price": 8
         },
         {
-          "name": "Fresh coconut  10"
+          "name": "Fresh coconut",
+          "price": 10
         },
         {
-          "name": "Soda  5"
+          "name": "Soda",
+          "price": 5
         },
         {
-          "name": "Hot coffee  5"
+          "name": "Hot coffee",
+          "price": 5
         },
         {
-          "name": "Hot tea 5"
+          "name": "Hot tea",
+          "price": 5
         },
         {
-          "name": "Saratoga still water 8"
+          "name": "Saratoga still water",
+          "price": 8
         },
         {
-          "name": "Saratoga sparkling water 8"
+          "name": "Saratoga sparkling water",
+          "price": 8
         }
       ]
     },
@@ -305,31 +355,40 @@
       "name": "Sides",
       "items": [
         {
-          "name": "Jasmine rice  3"
+          "name": "Jasmine rice",
+          "price": 3
         },
         {
-          "name": "Sticky rice  4"
+          "name": "Sticky rice",
+          "price": 4
         },
         {
-           "name": "Roti  4"
+          "name": "Roti",
+          "price": 4
         },
         {
-           "name": "Fried egg 3"
+          "name": "Fried egg",
+          "price": 3
         },
         {
-          "name": "Steamed noodle  3"
+          "name": "Steamed noodle",
+          "price": 3
         },
         {
-          "name": "Steamed vegetables  5"
+          "name": "Steamed vegetables",
+          "price": 5
         },
         {
-          "name": "Citrus chili relish  3"
+          "name": "Citrus chili relish",
+          "price": 3
         },
         {
-          "name": "Cilantro chili relish  3"
+          "name": "Cilantro chili relish",
+          "price": 3
         },
         {
-          "name": "Roasted chili relish  3"
+          "name": "Roasted chili relish",
+          "price": 3
         }
       ]
     }
