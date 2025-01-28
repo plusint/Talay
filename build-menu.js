@@ -3,33 +3,41 @@ const path = require('path');
 
 // Helper function to generate HTML for menu items
 function generateMenuItemHtml(item, categoryName) {
-  let html = `
+    let html = `
                         <div class="menu-item">`;
-  
-  // Special handling for Sides and Beverages sections
-  if (categoryName === "Sides" || categoryName === "Beverages") {
-      html += `
-                            <p>${item.name}</p>`;
-  } else {
-      html += `
-                            <h4>${item.name}</h4>`;
-      
-      // Add additions if they exist for this specific item
-      if (item.additions) {
-          html += `
+
+    // Special handling for Sides and Beverages sections
+    if (categoryName === "Sides" || categoryName === "Beverages") {
+        html += `
+                            <div class="menu-item-header">
+                                <p>${item.name}</p>
+                                ${item.price ? `<span class="price price--side">${item.price}</span>` : ''}
+                            </div>`;
+    } else {
+        html += `
+                            <div class="menu-item-header">
+                                <h4>${item.name}</h4>
+                                ${item.price ? `<span class="price">${item.price}</span>` : ''}
+                            </div>`;
+
+        // Add additions, options, and descriptions
+        if (item.additions) {
+            html += `
                             <p class="additions">+ ${item.additions.join(' | ')}</p>`;
-      }
-      
-      // Add description if it exists
-      if (item.description) {
-          html += `
+        }
+        if (item.options) {
+            html += `
+                            <p class="additions">${item.options.join(' | ')}</p>`;
+        }
+        if (item.description) {
+            html += `
                             <p>${item.description}</p>`;
-      }
-  }
-  
-  html += `
+        }
+    }
+
+    html += `
                         </div>`;
-  return html;
+    return html;
 }
 
 // Generate HTML for a category
@@ -38,25 +46,25 @@ function generateCategoryHtml(category) {
                 <details>
                     <summary>${category.name}</summary>
                     <div class="menu-section-content">`;
-    
+
     // Add category-wide note if it exists
     if (category.note) {
         html += `
                         <p class="additions">${category.note}</p>`;
     }
-    
-    // Add category-wide additions if they exist
-    if (category.additions) {
+
+    // Add category-wide options if they exist
+    if (category.options) {
         html += `
-                        <p class="additions">+ ${category.additions.join(' | ')}</p>`;
+                        <p class="additions">• ${category.options.join(' | ')}</p>`;
     }
-    
+
     // Add all items in this category
     console.log('building category: ', category);
     category.items.forEach(item => {
         html += generateMenuItemHtml(item, category.name);
     });
-    
+
     html += `
                     </div>
                 </details>`;
@@ -78,33 +86,33 @@ async function updateMenuSection() {
         // Read the JSON and HTML files
         const menuData = JSON.parse(await fs.readFile(path.join(__dirname, 'menu.json'), 'utf8'));
         const indexHtml = await fs.readFile(path.join(__dirname, 'index.html'), 'utf8');
-        
+
         // Generate new menu HTML
         const newMenuHtml = generateMenuHtml(menuData);
-        
+
         // Find and replace the menu container content
         const startTag = '<div class="menu-container">';
         const endTag = '</div><!-- end menu-container -->';
-        
+
         const startIndex = indexHtml.indexOf(startTag);
         const endIndex = indexHtml.indexOf(endTag) + endTag.length;
-        
+
         if (startIndex === -1 || endIndex === -1) {
             throw new Error('Could not find menu container tags in index.html');
         }
-        
+
         // Combine everything back together
-        const updatedHtml = indexHtml.slice(0, startIndex) + 
-                          startTag + 
-                          newMenuHtml + 
-                          endTag + 
-                          indexHtml.slice(endIndex);
-        
+        const updatedHtml = indexHtml.slice(0, startIndex) +
+            startTag +
+            newMenuHtml +
+            endTag +
+            indexHtml.slice(endIndex);
+
         // Write the updated HTML back to the file
         await fs.writeFile(path.join(__dirname, 'index.html'), updatedHtml);
-        
+
         console.log('Successfully updated menu section in index.html');
-        
+
     } catch (error) {
         console.error('Error updating menu section:', error);
         process.exit(1);
