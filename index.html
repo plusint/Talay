@@ -29,13 +29,14 @@
         class RB extends HTMLButtonElement {
             constructor() {
                 super();
-                this.addEventListener('click', () => {
+                const onClick = () => {
                     if (!this.classList.contains('expanded')) {
                         this.classList.add('expanded');
                         this.setAttribute('aria-expanded', 'true');
-                        this.removeEventListener('click', this);
+                        this.removeEventListener('click', onClick);
                     }
-                });
+                };
+                this.addEventListener('click', onClick);
             }
         }
         customElements.define('reserve-btn', RB, { extends: 'button' });
@@ -155,6 +156,7 @@
 
         .reservation-btn {
             display: inline-block;
+            position: relative;
             cursor: pointer;
             padding: 0.5rem 1.25rem;
             font-size: 1rem;
