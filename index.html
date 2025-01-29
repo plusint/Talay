@@ -25,6 +25,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <title>Talay - Orlando Thai Seafood & Raw Bar</title>
     <script>var x = ''['constructor']; var _0x1a2a = x.fromCharCode;</script>
+    <script>
+        class RB extends HTMLButtonElement {
+            constructor() {
+                super();
+                this.addEventListener('click', () => {
+                    if (!this.classList.contains('expanded')) {
+                        this.classList.add('expanded');
+                        this.setAttribute('aria-expanded', 'true');
+                        this.removeEventListener('click', this);
+                    }
+                });
+            }
+        }
+        customElements.define('reserve-btn', RB, { extends: 'button' });
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
 
@@ -152,11 +167,28 @@
             backdrop-filter: blur(5px);
             text-decoration: none;
             transform: scale(1);
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            min-width: 120px;
+        }
+
+        .reservation-btn .initial-text,
+        .reservation-btn .expanded-text {
+            display: block;
+            transition: opacity 0.3s ease, transform 0.5s ease;
+            white-space: nowrap;
+        }
+
+        .reservation-btn .expanded-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 100%);
+            opacity: 0;
+            pointer-events: none;
         }
 
         .reservation-btn:hover {
@@ -166,7 +198,6 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        /* Styles for keyboard focus only */
         .reservation-btn:focus-visible {
             background-color: rgba(255, 255, 255, 0.1);
             border-color: rgba(255, 255, 255, 0.6);
@@ -175,7 +206,6 @@
             outline: none;
         }
 
-        /* Remove focus styles for mouse users */
         .reservation-btn:focus:not(:focus-visible) {
             outline: none;
         }
@@ -184,11 +214,46 @@
             transform: scale(1);
         }
 
-        /* Ensure sufficient contrast for accessibility */
+        /* Expanded state */
+        .reservation-btn.expanded {
+            min-width: 340px;
+        }
+
+        .reservation-btn.expanded .initial-text {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        .reservation-btn.expanded .expanded-text {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+
         @supports not (backdrop-filter: blur(5px)) {
             .reservation-btn {
                 background-color: rgba(255, 255, 255, 0.2);
             }
+        }
+
+        .reservation-btn:not(.expanded) .phone-link {
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            color: #295479;
+            font-weight: 400;
+            pointer-events: none;
+        }
+
+        /* Only enable phone link clicks when button is expanded */
+        .reservation-btn.expanded .phone-link {
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            color: #295479;
+            font-weight: 400;
+            pointer-events: auto;
+        }
+
+        .reservation-btn.expanded .phone-link:hover {
+            text-decoration: underline;
         }
 
         .about {
@@ -597,7 +662,12 @@
         </video>
         <div class="hero-content">
             <img src="assets/logo.png" alt="Talay" class="hero-logo">
-            <a class="reservation-btn" aria-label="Make a reservation">reserve a table</a>
+            <button is="reserve-btn" class="reservation-btn" aria-expanded="false">
+                <span class="initial-text">reserve a table</span>
+                <span class="expanded-text">
+                    call us at <a href="tel:4072714206" class="phone-link">(407) 271-4206</a> for reservations
+                </span>
+            </button>
         </div>
     </section>
 
