@@ -125,18 +125,64 @@
             text-align: center;
             color: #fff;
             z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            gap: 2rem;
         }
 
         .hero-logo {
             width: clamp(300px, 50vw, 500px);
             height: auto;
-            margin-bottom: 20px;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto;
+        .reservation-btn {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: lowercase;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.0);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 2rem;
+            backdrop-filter: blur(5px);
+            text-decoration: none;
+            transform: scale(1);
+            transition: all 0.3s ease;
+        }
+
+        .reservation-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles for keyboard focus only */
+        .reservation-btn:focus-visible {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        /* Remove focus styles for mouse users */
+        .reservation-btn:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .reservation-btn:active {
+            transform: scale(1);
+        }
+
+        /* Ensure sufficient contrast for accessibility */
+        @supports not (backdrop-filter: blur(5px)) {
+            .reservation-btn {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
         }
 
         .about {
@@ -545,6 +591,7 @@
         </video>
         <div class="hero-content">
             <img src="assets/logo.png" alt="Talay" class="hero-logo">
+            <a href="#reservations" class="reservation-btn" aria-label="Make a reservation">reserve a table</a>
         </div>
     </section>
 
@@ -586,7 +633,8 @@
                             <div class="menu-item-header">
                                 <h4>Goong Lui Suan</h4><span class="price">11</span>
                             </div>
-                            <p>Thai-style shrimp summer rolls, Thai basil, lettuce, julienne carrots, bean sprouts, cilantro, creamy chili-lime sauce</p>
+                            <p>Thai-style shrimp summer rolls, Thai basil, lettuce, julienne carrots, bean sprouts,
+                                cilantro, creamy chili-lime sauce</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
@@ -605,7 +653,9 @@
                 <details>
                     <summary>Raw</summary>
                     <div class="menu-section-content">
-                        <p class="additions">* consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.</p>
+                        <p class="additions">* consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs
+                            may increase your risk of foodborne illness, especially if you have certain medical
+                            conditions.</p>
                         <div class="menu-item">
                             <div class="menu-item-header">
                                 <h4>Oysters</h4>
@@ -654,7 +704,8 @@
                             <div class="menu-item-header">
                                 <h4>Yum Woon Sen Talay</h4><span class="price">23</span>
                             </div>
-                            <p>Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, lime dressing</p>
+                            <p>Glass noodle salad, mixed seafood, butterfly pea flowers, Thai chili, onion, celery, lime
+                                dressing</p>
                         </div>
                     </div>
                 </details>
@@ -696,25 +747,29 @@
                             <div class="menu-item-header">
                                 <h4>Hor Mok Talay</h4><span class="price">32</span>
                             </div>
-                            <p>Mixed seafood in red curry custard, egg, kaffir lime, rhizome, Thai basil, coconut milk</p>
+                            <p>Mixed seafood in red curry custard, egg, kaffir lime, rhizome, Thai basil, coconut milk
+                            </p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
                                 <h4>Goong Ob Woon Sen</h4><span class="price">25</span>
                             </div>
-                            <p>Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay's signature wok sauce, cilantro chili relish</p>
+                            <p>Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay's
+                                signature wok sauce, cilantro chili relish</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
                                 <h4>Goong Prik Kluea</h4><span class="price">25</span>
                             </div>
-                            <p>Crispy fried shrimp, garlic, bell peppers, Thai chili, black pepper, sea salt, cilantro chili relish</p>
+                            <p>Crispy fried shrimp, garlic, bell peppers, Thai chili, black pepper, sea salt, cilantro
+                                chili relish</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
                                 <h4>Goong Muk Ga Ree</h4><span class="price">26</span>
                             </div>
-                            <p>Creamy shrimp and calamari stir-fried, curry powder, milk, egg, scallion, celery, sweet onion, bell pepper, chili oil</p>
+                            <p>Creamy shrimp and calamari stir-fried, curry powder, milk, egg, scallion, celery, sweet
+                                onion, bell pepper, chili oil</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
@@ -726,7 +781,8 @@
                             <div class="menu-item-header">
                                 <h4>Pla Tod Yum Ma Muang</h4><span class="price">29</span>
                             </div>
-                            <p>Fried snapper fillet, green mango, cashews, radish, red onion, Thai chili, cilantro, lime dressing</p>
+                            <p>Fried snapper fillet, green mango, cashews, radish, red onion, Thai chili, cilantro, lime
+                                dressing</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
@@ -797,7 +853,8 @@
                             <div class="menu-item-header">
                                 <h4>Gaeng Phed Ped Yang</h4><span class="price">27</span>
                             </div>
-                            <p>Roasted duck breast in red curry, tomato, pineapple, bell peppers, Thai basil, coconut milk</p>
+                            <p>Roasted duck breast in red curry, tomato, pineapple, bell peppers, Thai basil, coconut
+                                milk</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
@@ -815,7 +872,8 @@
                             <div class="menu-item-header">
                                 <h4>Keaw Wan Gai</h4><span class="price">22</span>
                             </div>
-                            <p>White meat chicken in green curry, bamboo shoots, bell peppers, Thai basil, coconut milk</p>
+                            <p>White meat chicken in green curry, bamboo shoots, bell peppers, Thai basil, coconut milk
+                            </p>
                         </div>
                     </div>
                 </details>
@@ -851,7 +909,8 @@
                             <div class="menu-item-header">
                                 <h4>Pad Kra Pow</h4>
                             </div>
-                            <p>Thai basil, garlic, chili, bell peppers, Talay's spicy wok sauce. Served with jasmine rice</p>
+                            <p>Thai basil, garlic, chili, bell peppers, Talay's spicy wok sauce. Served with jasmine
+                                rice</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
@@ -875,7 +934,8 @@
                             <div class="menu-item-header">
                                 <h4>Pad Pak Boong</h4>
                             </div>
-                            <p>Water spinach, chili, garlic, fermented bean sauce, Talay's signature wok sauce. Served with jasmine rice</p>
+                            <p>Water spinach, chili, garlic, fermented bean sauce, Talay's signature wok sauce. Served
+                                with jasmine rice</p>
                         </div>
                     </div>
                 </details>
@@ -892,7 +952,8 @@
                             <div class="menu-item-header">
                                 <h4>I Tim Boran</h4><span class="price">12</span>
                             </div>
-                            <p>Thai-style coconut ice cream, bun, sweet sticky rice, palm seed, jackfruit, shredded young coconut</p>
+                            <p>Thai-style coconut ice cream, bun, sweet sticky rice, palm seed, jackfruit, shredded
+                                young coconut</p>
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-header">
@@ -1036,7 +1097,8 @@
                             </div>
                         </div>
                     </div>
-                </details></div><!-- end menu-container -->
+                </details>
+            </div><!-- end menu-container -->
         </div>
     </section>
 
