@@ -60,6 +60,7 @@
 
         header.visible {
             top: 0;
+            padding: 0.5% 0;
         }
 
         nav {
@@ -139,6 +140,7 @@
 
         .reservation-btn {
             display: inline-block;
+            cursor: pointer;
             padding: 0.5rem 1.25rem;
             font-size: 0.85rem;
             letter-spacing: 0.1em;
@@ -151,6 +153,10 @@
             text-decoration: none;
             transform: scale(1);
             transition: all 0.3s ease;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         .reservation-btn:hover {
@@ -591,7 +597,7 @@
         </video>
         <div class="hero-content">
             <img src="assets/logo.png" alt="Talay" class="hero-logo">
-            <a href="#reservations" class="reservation-btn" aria-label="Make a reservation">reserve a table</a>
+            <a class="reservation-btn" aria-label="Make a reservation">reserve a table</a>
         </div>
     </section>
 
