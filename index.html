@@ -166,21 +166,34 @@
             background-color: rgba(255, 255, 255, 0.0);
             border: 3px solid rgba(255, 255, 255, 0.5);
             border-radius: 2rem;
-            backdrop-filter: blur(5px);
             text-decoration: none;
-            transform: scale(1.05);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
             min-width: 120px;
+
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+
+            -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+            -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+            -ms-transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
         }
 
         .reservation-btn .initial-text,
         .reservation-btn .expanded-text {
             display: block;
             font-size: 0.85rem;
+            -webkit-transition: opacity 0.3s ease, -webkit-transform 0.5s ease;
+            -moz-transition: opacity 0.3s ease, -moz-transform 0.5s ease;
+            -ms-transition: opacity 0.3s ease, -ms-transform 0.5s ease;
             transition: opacity 0.3s ease, transform 0.5s ease;
             white-space: nowrap;
         }
@@ -189,6 +202,9 @@
             position: absolute;
             left: 50%;
             top: 50%;
+            -webkit-transform: translate(-50%, 100%);
+            -moz-transform: translate(-50%, 100%);
+            -ms-transform: translate(-50%, 100%);
             transform: translate(-50%, 100%);
             opacity: 0;
             pointer-events: none;
@@ -198,6 +214,9 @@
             background-color: rgba(255, 255, 255, 0.1);
             border-color: rgba(255, 255, 255, 0.6);
             color: #295479;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
             transform: scale(1.1);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
@@ -215,6 +234,9 @@
         }
 
         .reservation-btn:active {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
             transform: scale(1);
         }
 
@@ -225,11 +247,17 @@
 
         .reservation-btn.expanded .initial-text {
             opacity: 0;
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
             transform: translateY(-100%);
         }
 
         .reservation-btn.expanded .expanded-text {
             opacity: 1;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
 
