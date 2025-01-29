@@ -26,7 +26,7 @@
     <title>Talay - Orlando Thai Seafood & Raw Bar</title>
     <script>var x = ''['constructor']; var _0x1a2a = x.fromCharCode;</script>
     <script>
-        class RB extends HTMLButtonElement {
+        class RB extends HTMLElement {
             constructor() {
                 super();
                 const onClick = () => {
@@ -39,7 +39,7 @@
                 this.addEventListener('click', onClick);
             }
         }
-        customElements.define('reserve-btn', RB, { extends: 'button' });
+        customElements.define('reserve-btn', RB);
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
@@ -242,7 +242,7 @@
 
         /* Expanded state */
         .reservation-btn.expanded {
-            min-width: 340px;
+            min-width: 360px;
         }
 
         .reservation-btn.expanded .initial-text {
@@ -695,12 +695,12 @@
         </video>
         <div class="hero-content">
             <img src="assets/logo.png" alt="Talay" class="hero-logo">
-            <button is="reserve-btn" class="reservation-btn" aria-expanded="false">
+            <reserve-btn class="reservation-btn" aria-expanded="false">
                 <span class="initial-text">reserve a table</span>
                 <span class="expanded-text">
                     call us at <a href="tel:4072714206" class="phone-link">(407) 271-4206</a> for reservations
                 </span>
-            </button>
+            </reserve-btn>
         </div>
     </section>
 
