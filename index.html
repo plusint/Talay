@@ -274,20 +274,20 @@
             }
         }
 
-        .reservation-btn:not(.expanded) .phone-link {
+        .phone-link {
             text-decoration: none;
             letter-spacing: 0.05em;
             color: #295479;
             font-weight: 400;
+        }
+
+        .reservation-btn:not(.expanded) .phone-link {
+
             pointer-events: none;
         }
 
         /* Only enable phone link clicks when button is expanded */
         .reservation-btn.expanded .phone-link {
-            text-decoration: none;
-            letter-spacing: 0.05em;
-            color: #295479;
-            font-weight: 400;
             pointer-events: auto;
         }
 
@@ -702,12 +702,16 @@
         </video>
         <div class="hero-content">
             <img src="assets/logo.png" alt="Talay" class="hero-logo">
-            <reserve-btn class="reservation-btn" aria-expanded="false">
+            <!-- <reserve-btn class="reservation-btn" aria-expanded="false">
                 <span class="initial-text">reserve a table</span>
                 <span class="expanded-text">
                     call us at <a href="tel:4072714206" class="phone-link">(407) 271-4206</a> for reservations
                 </span>
-            </reserve-btn>
+            </reserve-btn> -->
+            <a href="https://www.toasttab.com/local/order/talay-noir-861-north-orange-avenue/r-d5281c5c-0368-43c5-af7d-faebd37df7be" target="_blank">
+                <button class="reservation-btn">Order Online</button>
+            </a>
+            <p style="color: #295479; margin-top: 1rem;"> <a href="tel:4072714206" class="phone-link">(407) 271-4206</a> for reservations </p>
         </div>
     </section>
 
