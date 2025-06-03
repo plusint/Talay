@@ -95,11 +95,6 @@
           "name": "Tom Kha",
           "description": "Coconut soup, galangal, mushroom, Thai herbal broth",
           "options": ["chicken 19", "shrimp 22", "seafood 25"]
-        },
-        {
-          "name": "Yen Ta Fo Talay",
-          "description": "Spicy-sweet-tangy soup, mixed seafood, water spinach, fried wonton",
-          "price": 27
         }
       ]
     },
@@ -120,6 +115,11 @@
           "name": "Goong Ob Woon Sen",
           "description": "Shrimp with glass noodles, bacon, black pepper, sesame oil, celery, ginger, Talay's signature wok sauce, cilantro chili relish",
           "price": 25
+        },
+        {
+          "name": "Goong Ma Kam",
+          "description": "Crispy fried shrimp, tamarind sauce, roasted chili, fried shallots, garlic, scallions, cashew nuts",
+          "price": 26
         },
         {
           "name": "Goong Prik Kluea",
@@ -147,7 +147,7 @@
           "price": 21
         },
         {
-          "name": "Kao Pad Pu",
+          "name": "Khao Pad Pu",
           "description": "Lump crabmeat fried rice, egg, scallion, chili fish sauce",
           "price": 26
         },
@@ -240,6 +240,10 @@
           "description": "Jasmine rice, egg, Chinese broccoli, tomato, onion, Talay's signature wok sauce"
         },
         {
+          "name": "Pineapple Fried Rice",
+          "description": "Pineapple, jasmine rice, egg, tomato, onion, scallion, raisin, cashew nut, curry powder, Talay’s signature wok sauce"
+        },
+        {
           "name": "Pad Kra Pow",
           "description": "Thai basil, garlic, chili, bell peppers, Talay's spicy wok sauce. Served with jasmine rice"
         },
@@ -319,10 +323,6 @@
           "price": 7
         },
         {
-          "name": "Thai tea slushy",
-          "price": 8
-        },
-        {
           "name": "Talay's iced latte",
           "price": 8
         },
@@ -332,6 +332,10 @@
         },
         {
           "name": "Soda",
+          "price": 5
+        },        
+        {
+          "name": "Unsweet iced tea",
           "price": 5
         },
         {
@@ -369,11 +373,11 @@
         },
         {
           "name": "Fried egg",
-          "price": 3
+          "price": 4
         },
         {
           "name": "Steamed noodle",
-          "price": 3
+          "price": 4
         },
         {
           "name": "Steamed vegetables",
