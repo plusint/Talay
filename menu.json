@@ -282,6 +282,61 @@
       ]
     },
     {
+      "name": "Signature Cocktails",
+      "items": [
+        {
+          "name": "Mango Sticky Rice",
+          "description": "Clarified mango sticky rice, mango mousse, toasted coconut flakes",
+          "price": 18
+        },
+        {
+          "name": "Oh My Lychee!",
+          "description": "Elderflower rose gin, luxardo maraschino liqueur, lychee liqueur, lychee foam",
+          "price": 17
+        },
+        {
+          "name": "Banana Bourbon Barrel",
+          "description": "Rye whiskey, banana liqueur, banana syrup",
+          "price": 17
+        },
+        {
+          "name": "Dragon Fruit De La Rose",
+          "description": "Drop of sunshine sparkling rosé, pamplemousse liqueur, dragon fruit syrup, lemon",
+          "price": 16
+        },
+        {
+          "name": "Gimme Guava",
+          "description": "Vodka, plum syrup, guava, lime",
+          "price": 16
+        },
+        {
+          "name": "Nothin' But Coconut",
+          "description": "Coconut cartel blanco, malibu, coconut water, coconut foam, toasted coconut",
+          "price": 16
+        },
+        {
+          "name": "Tangy Tamarind Temptation",
+          "description": "Mezcal, chipotle chili liqueur, tamarind syrup, lime",
+          "price": 15
+        },
+        {
+          "name": "Be A Pineapple",
+          "description": "Spiced rum, pineapple liqueur, aperol, pineapple, lemon, egg-free foamer",
+          "price": 17
+        },
+        {
+          "name": "Orange Avenue",
+          "description": "Tequila blanco, orange liqueur, aperol, lemon, agave, egg-free foamer",
+          "price": 17
+        },
+        {
+          "name": "Watermelon Sugar High",
+          "description": "Gin, yuzu liqueur, watermelon, matcha, egg-free foamer",
+          "price": 17
+        }
+      ]
+    },
+    {
       "name": "Zero Proof",
       "items": [
         {
