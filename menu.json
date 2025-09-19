@@ -19,6 +19,11 @@
           "price": 7
         },
         {
+          "name": "Hoy Jor",
+          "description": "Fried crab and pork mixed, pepper, water chestnut, cilantro, sesame oil, plum sauce",
+          "price": 11
+        },
+        {
           "name": "Goong Lui Suan",
           "description": "Thai-style shrimp summer rolls, Thai basil, lettuce, julienne carrots, bean sprouts, cilantro, creamy chili-lime sauce",
           "price": 11
@@ -221,7 +226,11 @@
     },
     {
       "name": "Classics",
-      "options": ["chicken, pork, beef, tofu, vegetable 17", "shrimp 22", "seafood 25"],
+      "options": [
+        "chicken, pork, beef, tofu, vegetable 17",
+        "shrimp 22",
+        "seafood 25"
+      ],
       "items": [
         {
           "name": "Pad Thai",
@@ -384,7 +393,7 @@
         {
           "name": "Soda",
           "price": 5
-        },        
+        },
         {
           "name": "Unsweet iced tea",
           "price": 5
